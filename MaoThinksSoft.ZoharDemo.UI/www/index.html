@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+
+    <link href="js/jbox/jBox.css" rel="stylesheet" />
+    <link href="js/jbox/plugins/Notice/jBox.Notice.css" rel="stylesheet" />
+    <link href="js/jbox/plugins/Confirm/jBox.Confirm.css" rel="stylesheet" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jbox/jBox.js"></script>
+    <script src="js/jbox/plugins/Notice/jBox.Notice.min.js"></script>
+    <script src="js/jbox/plugins/Confirm/jBox.Confirm.min.js"></script>
+
+    <script src="js/app/login.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <div class="account-wall_">
+                    <div class="form-signin">
+                        <div class="text-center">
+                            <h2 style="color:black"><b>Zohar Demo</b></h2>
+                        </div>
+                        
+                        <hr />
+                        <input id="txt-email" type="text" class="form-control" placeholder="Email" required autofocus>
+                        <br />
+                        <input id="txt-pwd" type="password" class="form-control" placeholder="Password" required>
+                        <button class="btn btn-lg btn-primary btn-block" style="background-color:black" onclick="login()">
+                            Sign in
+                        </button>
+                        <hr />
+                        <a href="#" class="text-center new-account" onclick="openRegisterPage()"><h4>Create an account</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chat</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/app/chat.js"></script>
+
+    <style>
+        .navbar-brand {
+            transform: translateX(-50%);
+            left: 50%;
+            position: absolute;
+        }
+
+        /* DEMO example styles for logo image */
+        .navbar-brand {
+            padding: 0px;
+        }
+
+            .navbar-brand > img {
+                height: 100%;
+                width: auto;
+                padding: 7px 14px;
+            }
+
+        .top {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+        }
+
+        .topContent {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black;position: fixed;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <br />
+                    <b style="color:white">Zohar Demo</b>
+                </a>
+
+                <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" /></a>
+            </div>
+
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="btn-group btn-group-justified top">
+        <a href="profile.html" class="btn btn-default" id="bCheckIn" value="action01">
+            <img src="img/profile.png" />
+        </a>
+
+        <a href="cards.html" class="btn btn-default" id="bactivities" value="action02">
+            <img src="img/swipe.png" width="35" height="35"/>
+        </a>
+
+        <a href="chat.html" class="btn btn-default active" id="bBottle" value="action03">
+            <img src="img/chat.png" />
+        </a>
+
+        <a href="reports.html" class="btn btn-default" id="bBottle" value="action03">
+            <img src="img/chart.png" />
+        </a>
+    </div>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Demo
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="chat" style="width:100%; height:100%; margin-right: auto; margin-left: auto; display:none">
+        <div style="height:150px">
+
+        </div>
+        <div style="margin-right: auto; margin-left: auto;" class="text-center">
+            <h3><b style="color:gray">Chat</b></h3>
+            <br />
+            <img src="img/pane/chat.png" />
+            <br />
+            <br />
+            <p style="color:red"><b>Coming Soon!</b></p>
+        </div>
+
+    </div>
+
+    <div id="loading" style="width:100%; height:100%; margin-right: auto; margin-left: auto;">
+        <div style="height:200px">
+
+        </div>
+        <div style="margin-right: auto; margin-left: auto;" class="text-center">
+            <img style="width:80px;height:80px" src="img/loading.gif" />
+            <br />
+            <h4><b style="color:gray">Loading...</b></h4>
+        </div>
+
+    </div>
+</body>
+</html>
