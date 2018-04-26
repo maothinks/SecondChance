@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/login.css" rel="stylesheet" />
+
+    <link href="js/jbox/jBox.css" rel="stylesheet" />
+    <link href="js/jbox/plugins/Notice/jBox.Notice.css" rel="stylesheet" />
+    <link href="js/jbox/plugins/Confirm/jBox.Confirm.css" rel="stylesheet" />
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jbox/jBox.js"></script>
+    <script src="js/jbox/plugins/Notice/jBox.Notice.min.js"></script>
+    <script src="js/jbox/plugins/Confirm/jBox.Confirm.min.js"></script>
+    
+
+    <script src="js/app/login.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <div class="account-wall_">
+                    <div class="form-signin">
+                        <div class="text-center">
+                            <h2 style="color:black"><b>New Account</b></h2>
+                        </div>
+
+                        <hr />
+                        Email:
+                        <input id="txt-email" type="email" class="form-control" placeholder="Email" required autofocus>
+                        <br />
+
+                        Friendly Name:
+                        <input id="txt-name" type="text" class="form-control" placeholder="Friendly Name" required>
+                        <br />
+                        Telephone Number:
+                        <input id="txt-telephone-number" type="number" class="form-control" placeholder="Telephone Number" required>
+                        <br />
+
+                        Mobile Number:
+                        <table style="width:100%">
+                            <tr>
+                                <td style="width:30%">
+                                    <input id="txt-mobile-number-prefix" type="number" class="form-control" placeholder="Prefix" required>
+                                </td>
+                                <td>
+                                    <input  id="txt-mobile-number" id="txt-mobile-number" type="number" class="form-control" placeholder="Mobile Number" required>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+
+                        Password:
+                        <input id="txt-pwd" type="password" class="form-control" placeholder="Password" required>
+                        <input id="txt-confirm-pwd" type="password" class="form-control" placeholder="Confirm Password" required>
+
+                        <hr />
+
+                        <div style="width:100%">
+                            <table style="width:100%">
+                                <tr>
+                                    <td><input id="rb-male" type="radio" name="genre" value="Male" /> Male</td>
+                                    <td><input id="rb-female" type="radio" name="genre" value="Female" /> Female</td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <hr />
+                        <button class="btn btn-lg btn-primary btn-block" style="background-color:black" onclick="register()">
+                            Register
+                        </button>
+                        <div id="success"></div>
+                        
+                        <hr />
+                        <a href="#" class="text-center new-account" onclick="returnTologin()"><h4>Cancel</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cards</title>
+    <link href="css/jTinder.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/hammer.js"></script>
+    <style>
+        .navbar-brand {
+            transform: translateX(-50%);
+            left: 50%;
+            position: absolute;
+        }
+
+        /* DEMO example styles for logo image */
+        .navbar-brand {
+            padding: 0px;
+        }
+
+            .navbar-brand > img {
+                height: 100%;
+                width: auto;
+                padding: 7px 14px;
+            }
+
+        .top {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            z-index: 999;
+            width: 100%;
+            height: 23px;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <br />
+                    <b id="b-title" style="color:white">Second Chance</b>
+                </a>
+            </div>
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" /></a>
+        </div>
+        <!--/.container-fluid -->
+    </nav>
+
+    <div class="btn-group btn-group-justified top">
+        <a href="map.html" class="btn btn-default" id="bCheckIn" value="action01">
+            <img src="img/world.png" />
+        </a>
+
+        <a href="profile.html" class="btn btn-default" id="bCheckIn" value="action01">
+            <img src="img/profile.png" />
+        </a>
+
+        <a href="cards.html" class="btn btn-default active" id="bactivities" value="action02">
+            <img src="img/swipe.png" width="35" height="35" />
+        </a>
+
+        <a href="chat.html" class="btn btn-default" id="bBottle" value="action03">
+            <img src="img/chat.png" />
+        </a>
+
+        <a href="reports.html" class="btn btn-default" id="bBottle" value="action03">
+            <img src="img/chart.png" />
+        </a>
+    </div>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        Start Demo
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper_" style="width:100%; height:100%;">
+            <div class="container-fluid_" style="width:100%; height:100%;">
+               
+
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+
+
+    <div id="cards" style="width:100%; height:100%; margin-right: auto; margin-left: auto; display:none; padding-bottom:50px">
+        <div class="wrap">
+            <!-- start jtinder container -->
+            <div id="tinderslide">
+                <ul>
+                    <!--<li class="pane1">
+                        <div class="name"><h1><b>MAURICIO</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>-->
+                   
+                    <li class="pane2">
+                        <div class="name"><h1><b>SARA</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane8">
+                        <div class="name"><h1><b>KELLY</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>
+                    <li class="pane3">
+                        <div class="name"><h1><b>SUSIE</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                        <!--<div class="chat"><a id="img-3"  class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->  
+                        
+                        
+                    </li>
+                    <li class="pane4">
+                        <div class="name"><h1><b>VICTORIA</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                        <!--<div class="chat"><a id="img-4" class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
+                    </li>
+                    <li class="pane5">
+                        <div class="name"><h1><b>SILVANA</b> </h1></div>
+                        <div class="img"  ></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                        <!--<div class="chat"><a id="img-5" class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
+                    </li>
+                    <!--<li class="pane6">
+                        <div class="name"><h1><b>ROSY</b>f </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>-->
+                    <!--<li class="pane7">
+                        <div class="name"><h1><b>JOANNA</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>-->
+                   
+                    <!--<li class="pane9">
+                        <div class="name"><h1><b>LAURA</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>-->
+                    <!--<li class="pane10">
+                        <div class="name"><h1><b>RACHAEL</b> </h1></div>
+                        <div class="img"></div>
+                        <div class="like"></div>
+                        <div class="dislike"></div>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- end jtinder container -->
+        </div>
+        <!-- end padding container -->
+        <!-- jTinder trigger by buttons  -->
+       
+        <div class="footer" >
+            <a class="btn-dislike" ><img src="img/delete.png" /></a>
+            <a class="btn-like"><img src="img/heart.png" /></a>
+        </div>
+
+    </div>
+
+    <div id="loading" style="width:100%; height:100%; margin-right: auto; margin-left: auto;">
+        <div style="height:200px">
+
+        </div>
+        <div style="margin-right: auto; margin-left: auto;" class="text-center">
+            <img style="width:80px;height:80px" src="img/loading.gif" />
+            <br />
+            <h4><b style="color:gray">Loading...</b></h4>
+        </div>
+
+    </div>
+
+    <!-- transform2d lib -->
+    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+    <!-- jTinder lib -->
+    <script type="text/javascript" src="js/jquery.jTinder.js"></script>
+
+    <!-- jTinder initialization script -->
+    <!--<script type="text/javascript" src="js/mainTinder.js"></script>-->
+    <script src="js/app/cards.js"></script>
+</body>
+</html>
