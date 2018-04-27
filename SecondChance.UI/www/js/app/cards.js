@@ -37,10 +37,10 @@
             $("#tinderslide").jTinder("dislike");
         });
 
-        $("#menu-toggle").click(function (e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-        });
+        //$("#menu-toggle").click(function (e) {
+        //    e.preventDefault();
+        //    $("#wrapper").toggleClass("toggled");
+        //});
 
         
         //for (var i = 3; i <= 5; i++) {

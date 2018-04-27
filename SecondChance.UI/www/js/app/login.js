@@ -9,7 +9,7 @@
 
 function login() {
     if (validateLogin()) {
-        location.href = "map.html";
+        location.href = "main.html";
     }
 }
 

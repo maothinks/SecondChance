@@ -88,35 +88,13 @@
             <div class="navbar-header">
                 <a class="navbar-brand">
                     <br />
-                    <b style="color:white">Second Chance</b>
+                    <b id="scc" style="color:white">Second Chance</b>
                 </a>
             </div>
             <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" /></a>
         </div>
         <!--/.container-fluid -->
     </nav>
-
-    <!--<div class="btn-group btn-group-justified top">
-        <a href="map.html" class="btn btn-default active" id="bCheckIn" value="action01">
-            <img src="img/world.png" />
-        </a>
-
-        <a href="profile.html" class="btn btn-default" id="bCheckIn" value="action01">
-            <img src="img/profile.png" />
-        </a>
-
-        <a href="cards.html" class="btn btn-default" id="bactivities" value="action02">
-            <img src="img/swipe.png" width="35" height="35" />
-        </a>
-
-        <a href="chat.html" class="btn btn-default" id="bBottle" value="action03">
-            <img src="img/chat.png" />
-        </a>
-
-        <a href="reports.html" class="btn btn-default" id="bBottle" value="action03">
-            <img src="img/chart.png" />
-        </a>
-    </div>-->
 
     <div id="wrapper">
         <!-- Sidebar -->
@@ -137,11 +115,12 @@
         <div id="map"></div>
     </div>
 
-    <div class="second-chance-ring">
+    <div id="second-chance-ring" class="second-chance-ring" style="display:none">
         <div id="rotate-container">
             <div id="rotatable">
                 <div style="text-align:center;">Rotate me</div>
             </div>
+            <!--<div id="output"></div>-->
         </div>
     </div>
 
@@ -154,7 +133,7 @@
         </div>
         <script type="text/javascript">
             $(function () {
-                $('#datetimepicker2').datetimepicker();
+                //$('#datetimepicker2').datetimepicker();
             });
         </script>
     </div>
@@ -168,7 +147,7 @@
         </div>
         <script type="text/javascript">
             $(function () {
-                $('#datetimepicker1').datetimepicker();
+                // $('#datetimepicker1').datetimepicker();
             });
         </script>       
     </div>
