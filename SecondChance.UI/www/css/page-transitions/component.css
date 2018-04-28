@@ -74,7 +74,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-1 {
-	background: #0ac2d2;
+    background-color: white;
 }
 
 .pt-page-2 {
@@ -82,19 +82,23 @@ html, body { height: 100%; }
 }
 
 .pt-page-3 {
-	background: #60d7a9;
+    background-color: white;
 }
 
 .pt-page-4 {
-	background: #fdc162;
+    background-color: white;
 }
 
 .pt-page-5 {
-	background: #fd6a62;
+    background-color: white;
 }
 
 .pt-page-6 {
-	background: #f68dbb;
+    background-color: white;
+}
+
+.pt-page-7 {
+    background-color: white;
 }
 
 /* Triggers (menu and button) */

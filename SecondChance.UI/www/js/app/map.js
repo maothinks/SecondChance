@@ -17,7 +17,6 @@ var markers = [];
 var currentId = 20;
 var hit = 0;
 
-
 function initializeMap() {
     // -- Medellin
     defaultPosition = new google.maps.LatLng(6.244203, -75.58121189999997);
@@ -110,7 +109,7 @@ function setMapOnAll(map) {
 //------------------------------------------------------- 
 //------------------------------------------------------- Variables
 //-------------------------------------------------------
-var currentAngle = 15;
+var currentAngle = 0;
 
 function initializeRing() {
     $("#second-chance-ring").show();
@@ -128,16 +127,14 @@ function initializeRing() {
         setOutput([
             ['Gesture', 'Rotate'],
             ['angle', Math.floor(e.detail.angle) + "°"],
-            ['distanceFromOrigin', Math.floor(e.detail.distanceFromOrigin) + "°"],
+            ['distanceFromOrigin', Math.floor(e.detail.distanceFromOrigin)],
             ['distanceFromLast', Math.floor(e.detail.distanceFromLast) + "°"]
         ]);
-
     });
 
     function setOutput(data) {
         var outputStr = "> ";
-        var distance = parseInt(data[2][1].replace('°', ''));
-
+        var distance = parseInt(data[2][1]);
 
         for (var i = 0; i < data.length; i++) {
             outputStr += "";
@@ -145,14 +142,14 @@ function initializeRing() {
         var output = document.getElementById('output');
 
         if (distance > 0 && distance <= 10) {
-            hit = 180;
+            hit = 90;
         } else if (distance > -10 && distance < 0) {
-            hit = -180;
+            hit = -90;
         }
 
         if (hit != 0) {
             if (distance > 0 && distance > hit) {
-                hit += 180;
+                hit += 90;
                
                 if (currentId <= 20) {
                     currentId += 1;
@@ -161,7 +158,7 @@ function initializeRing() {
             }
 
             if (distance < 0 && distance < hit) {
-                hit -= 180;
+                hit -= 90;
                 
 
                 if (currentId >= 1) {
@@ -180,7 +177,7 @@ function initializeRing() {
         maxDelay: 1000
     })
     regionOne.bind(tapElementOne, longTap, function (e) {
-        PageTransitions.nextPage(32);
+        PageTransitions.nextPage(33, 1, 2);
     });
 }
 
