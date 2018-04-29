@@ -29,7 +29,8 @@
          */
         $('.btn-like').click(function (e) {
             e.preventDefault();
-            $("#tinderslide").jTinder("like");
+            onclick = PageTransitions.nextPage(1, 2, 4)
+            //$("#tinderslide").jTinder("like");
         });
 
         $('.btn-dislike').click(function (e) {
