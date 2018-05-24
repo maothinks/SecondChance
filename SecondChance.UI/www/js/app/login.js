@@ -1,10 +1,14 @@
 ﻿$(document).ready(function () {
+    
     new jBox('Modal', {
         attach: '#success',
         height: 200,
         content: ' <div class="text-center" style="color:black"><hr/><h4>Register Successfull!! </h4><hr/> <button class="btn btn-lg btn-primary btn-block" style="background-color:black" onclick="location.href = \'index.html\'">OK</button> </div>',
         animation: 'flip',
     });
+
+    setTimeout(function () { location.href = "main.html"; }, 3000);
+    
 });
 
 function login() {

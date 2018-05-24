@@ -37,7 +37,7 @@
             <div class="navbar-header">
                 <a class="navbar-brand">
                     <br />
-                    <b style="color:white; font-size:medium">Second Chance</b>
+                    <b id="lbl-place" style="color:white; font-size:medium">Sta Catalina</b>
                 </a>
             </div>
             <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" /></a>
@@ -64,9 +64,9 @@
                 <li>
                     <a onclick="PageTransitions.nextPage(animation, currentPage, 6)">Profile</a>
                 </li>
-                <li>
+                <!--<li>
                     <a onclick="PageTransitions.nextPage(animation, currentPage, 5)">Statistics</a>
-                </li>
+                </li>-->
                 <li>
                     <a href="index.html">Logout</a>
                 </li>
@@ -96,19 +96,47 @@
             <div class="btn-group btn-group-justified top-maps">
                 <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:43%">
                     <div class="input-group date-time" data-provide="datepicker">
-                        <input type='text' class="form-control" value="26/04/2018" />
+                        <!--<input type='text' class="form-control" value="26/04/2018" />-->
+                        <select class="form-control">
+                            <option value="d1">26/04/2018</option>
+                            <option value="d2">25/04/2018</option>
+                            <option value="d3">24/04/2018</option>
+                            <option value="d4">23/04/2018</option>
+                        </select>
                         <!--<div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
-                        </div>-->
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>-->
                     </div>
                 </a>
 
                 <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:43%">
                     <div class="input-group date-time" data-provide="datepicker">
-                        <input type='text' class="form-control" value="08:30" />
+                        <!--<input type='text' class="form-control" value="08:30" />-->
+                        <select class="form-control" onchange="onTimeChanged(this)">
+                            <option value="20">21:30</option>
+                            <option value="19">20:00</option>
+                            <option value="18">19:15</option>
+                            <option value="17">18:45</option>
+                            <option value="16">18:30</option>
+                            <option value="15">17:37</option>
+                            <option value="14">16:50</option>
+                            <option value="13">16:30</option>
+                            <option value="12">15:47</option>
+                            <option value="11">15:10</option>
+                            <option value="10">14:35</option>
+                            <option value="9">13:07</option>
+                            <option value="8">12:30</option>
+                            <option value="7">12:00</option>
+                            <option value="6">11:50</option>
+                            <option value="5">11:30</option>
+                            <option value="4">11:10</option>
+                            <option value="3">10:05</option>
+                            <option value="2">09:30</option>
+                            <option value="1">08:13</option>
+                        </select>
                         <!--<div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
-                        </div>-->
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>-->
                     </div>
                 </a>
 
@@ -117,14 +145,29 @@
                 </a>
             </div>
 
-            <div style="height:100%;padding-bottom:30px;padding-top:100px;">
+            <div class="btn-group btn-group-justified top-maps-statistics">
+                <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:60px" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
+                    Statistics
+                </a>
+            </div>
+
+            <div style="height:100%;padding-bottom:30px;padding-top:134px;">
                 <div id="map"></div>
             </div>
 
             <div id="second-chance-ring" class="second-chance-ring" style="display:none">
+                <style>
+                    .ring-style-div {
+                        border-radius: 50%;
+                        background-color: deeppink;
+                    }
+                </style>
+
                 <div id="rotate-container">
                     <div id="rotatable">
-                        <div style="text-align:center;">Rotate me</div>
+                        <div style="text-align:center;background-color:deeppink;">
+                            <img class="ring-style" src="img/rotate.png" />
+                        </div>
                     </div>
 
                     <!--<div id="output"></div>-->
@@ -518,7 +561,7 @@
             }
         });
 
-                                    //# sourceURL=pen.js
+                                        //# sourceURL=pen.js
     </script>
 </body>
 </html>

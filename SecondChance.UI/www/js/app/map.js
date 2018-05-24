@@ -22,7 +22,7 @@ function initializeMap() {
     defaultPosition = new google.maps.LatLng(6.244203, -75.58121189999997);
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultPosition,
-        zoom: 7
+        zoom: 6
     });
 
 
@@ -95,6 +95,29 @@ function updateCurrentMarker() {
     });
 
     map.setCenter(position);
+
+    switch (currentId.toString()) {
+        case "20": { $("#lbl-place").text("Sta Catalina"); break; }
+        case "19": { $("#lbl-place").text("Cartagena"); break; }
+        case "18": { $("#lbl-place").text("Las Brisas"); break; }
+        case "17": { $("#lbl-place").text("Sincelejo"); break; }
+        case "16": { $("#lbl-place").text("Lorica"); break; }
+        case "15": { $("#lbl-place").text("Monteria"); break; }
+        case "14": { $("#lbl-place").text("Uraba"); break; }
+        case "13": { $("#lbl-place").text("Turbo"); break; }
+        case "12": { $("#lbl-place").text("Chigorodo"); break; }
+        case "11": { $("#lbl-place").text("Paramillo"); break; }
+        case "10": { $("#lbl-place").text("Sabanalarga"); break; }
+        case "9": { $("#lbl-place").text("Medellin"); break; }
+        case "8": { $("#lbl-place").text("Concordia"); break; }
+        case "7": { $("#lbl-place").text("El Carmen"); break; }
+        case "6": { $("#lbl-place").text("Quibdo"); break; }
+        case "5": { $("#lbl-place").text("Cerro Tamana"); break; }
+        case "4": { $("#lbl-place").text("Pereira"); break; }
+        case "3": { $("#lbl-place").text("La Union"); break; }
+        case "2": { $("#lbl-place").text("Tulua"); break; }
+        case "1": { $("#lbl-place").text("Cali"); break; }
+    }
 }
 
 // Sets the map on all markers in the array.
@@ -192,4 +215,9 @@ function initializeSidebar() {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+}
+
+function onTimeChanged(e) {
+    currentId = $(e).val();
+    updateCurrentMarker();
 }
