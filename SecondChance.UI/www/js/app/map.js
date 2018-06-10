@@ -22,11 +22,13 @@ function initializeMap() {
     defaultPosition = new google.maps.LatLng(6.244203, -75.58121189999997);
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultPosition,
-        zoom: 6
+        zoom: 6,
+        mapTypeId: 'terrain'
     });
 
 
     addMarkers();
+    
 }
 
 function addMarkers() {
@@ -51,25 +53,63 @@ function addMarkers() {
     addMarker(18, new google.maps.LatLng(9.848240767181084, -75.5292568041221));
     addMarker(19, new google.maps.LatLng(10.363844930163014, -75.32321494731542));
     addMarker(20, new google.maps.LatLng(10.613376345815507, -75.24850872072813));
+
+    var flightPlanCoordinates = [
+        { lat: 3.6246555626684307, lng: -76.54729401069983},
+        { lat: 4.014732562247033, lng: -76.19958179090412 },
+        { lat: 4.504153648374109, lng: -76.1482559370246 },
+        { lat: 4.799021826796936, lng: -75.67663216982277 },
+        { lat: 5.33522145897845, lng: -76.14025602136047 },
+        { lat: 5.584284041555005, lng: -76.54923826790031 },
+        { lat: 5.842113772256935, lng: -76.3922543927684 },
+        { lat: 6.032250396593195, lng: -76.11320206072475 },
+        { lat: 6.200476702881321, lng: -75.6144231661811},
+        { lat: 6.74513343077512, lng:-75.71446389771404 },
+        { lat: 7.14633231645950, lng:-76.07507794856156 },
+        { lat: 7.624152603564998, lng: -76.459024781425 },
+        { lat: 8.183483125970875, lng: -76.6729920545381 },
+        { lat: 8.433672671260823, lng: -76.35997543756014 },
+        { lat: 8.672145783613004, lng: -75.93157772507845 },
+        { lat: 9.194285921913059, lng: -75.67274471152086 },
+        { lat: 9.295753579000955, lng: -75.317256535519 },
+        { lat: 9.848240767181084, lng: -75.5292568041221 },
+        { lat: 10.363844930163014, lng: -75.32321494731542 },
+        {lat: 10.613376345815507, lng: -75.24850872072813 }
+    ];
+
+    var flightPath = new google.maps.Polyline({
+        path: flightPlanCoordinates,
+        geodesic: true,
+        strokeColor: '#000000',
+        strokeOpacity: 1.0,
+        strokeWeight: 10
+    });
+
+    flightPath.setMap(map);
 }
 
 // Adds a marker to the map and push to the array.
 function addMarker(id, location) {
-    var icon = "img/steps.png";
+    var marker
 
     if (currentId == id) {
-        icon = "img/profile__.png";
+        marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            draggable: false,
+        });
+
+        
+    } else {
+        
+        marker = new google.maps.Marker({
+            position: location,
+            map: null,
+            draggable: false,
+        });
     }
 
-    var marker = new google.maps.Marker({
-        position: location,
-        map: map,
-        icon: icon,
-        draggable: false,
-    });
-
     marker.set("id", id);
-
     // add event handlers
     //addClickHandler(marker);
     //addDragHandler(marker);
@@ -80,43 +120,48 @@ function addMarker(id, location) {
     if (currentId == id) {
         map.setCenter(location);
     }
+}
 
+function setMapOnAll(map) {
+    for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+    }
 }
 
 function updateCurrentMarker() {
+    setMapOnAll(null);
     var position;
+
     $(markers).each(function (index, marker) {
         if (index + 1 == currentId) {
-            marker.setIcon("img/profile__.png");
-            position = marker.position; 
-        } else{
-            marker.setIcon("img/steps.png");
+            position = marker.position;
+            marker.setMap(map);
         }
     });
 
     map.setCenter(position);
 
     switch (currentId.toString()) {
-        case "20": { $("#lbl-place").text("Sta Catalina"); break; }
-        case "19": { $("#lbl-place").text("Cartagena"); break; }
-        case "18": { $("#lbl-place").text("Las Brisas"); break; }
-        case "17": { $("#lbl-place").text("Sincelejo"); break; }
-        case "16": { $("#lbl-place").text("Lorica"); break; }
-        case "15": { $("#lbl-place").text("Monteria"); break; }
-        case "14": { $("#lbl-place").text("Uraba"); break; }
-        case "13": { $("#lbl-place").text("Turbo"); break; }
-        case "12": { $("#lbl-place").text("Chigorodo"); break; }
-        case "11": { $("#lbl-place").text("Paramillo"); break; }
-        case "10": { $("#lbl-place").text("Sabanalarga"); break; }
-        case "9": { $("#lbl-place").text("Medellin"); break; }
-        case "8": { $("#lbl-place").text("Concordia"); break; }
-        case "7": { $("#lbl-place").text("El Carmen"); break; }
-        case "6": { $("#lbl-place").text("Quibdo"); break; }
-        case "5": { $("#lbl-place").text("Cerro Tamana"); break; }
-        case "4": { $("#lbl-place").text("Pereira"); break; }
-        case "3": { $("#lbl-place").text("La Union"); break; }
-        case "2": { $("#lbl-place").text("Tulua"); break; }
-        case "1": { $("#lbl-place").text("Cali"); break; }
+        case "20": { $("#selectTime").val(20); $("#lbl-place").text("Restaurante Sta Catalina"); break; }
+        case "19": { $("#selectTime").val(19); $("#lbl-place").text("Hosteria Los Vientos"); break; }
+        case "18": { $("#selectTime").val(18); $("#lbl-place").text("Pasteleria Las Brisas"); break; }
+        case "17": { $("#selectTime").val(17); $("#lbl-place").text("Centro Comercial Orion"); break; }
+        case "16": { $("#selectTime").val(16); $("#lbl-place").text("Urbanizacion Altos de Lorica"); break; }
+        case "15": { $("#selectTime").val(15); $("#lbl-place").text("Don pancho Cafe-Bar"); break; }
+        case "14": { $("#selectTime").val(14); $("#lbl-place").text("BodyTech Gym"); break; }
+        case "13": { $("#selectTime").val(13); $("#lbl-place").text("Minorista de Turbo"); break; }
+        case "12": { $("#selectTime").val(12); $("#lbl-place").text("Revuelteria Maria Ana"); break; }
+        case "11": { $("#selectTime").val(11); $("#lbl-place").text("C.C Agua Clara"); break; }
+        case "10": { $("#selectTime").val(10); $("#lbl-place").text("Finca Los Benzos"); break; }
+        case "9": { $("#selectTime").val(9); $("#lbl-place").text("C.C Ciudad Azul"); break; }
+        case "8": { $("#selectTime").val(8); $("#lbl-place").text("Club Altos de Concordia"); break; }
+        case "7": { $("#selectTime").val(7); $("#lbl-place").text("Restaurante El Carmen"); break; }
+        case "6": { $("#selectTime").val(6); $("#lbl-place").text("Cafe Internet FastPoint"); break; }
+        case "5": { $("#selectTime").val(5); $("#lbl-place").text("Supermercado Tamana"); break; }
+        case "4": { $("#selectTime").val(4); $("#lbl-place").text("Gimnasio EnForma"); break; }
+        case "3": { $("#selectTime").val(3); $("#lbl-place").text("Vereda La Union"); break; }
+        case "2": { $("#selectTime").val(2); $("#lbl-place").text("Billares la Luz"); break; }
+        case "1": { $("#selectTime").val(1); $("#lbl-place").text("Farmacia AlCosto"); break; }
     }
 }
 
@@ -158,15 +203,15 @@ function initializeRing() {
     function setOutput(data) {
         var outputStr = "> ";
         var distance = parseInt(data[2][1]);
-
+        
         for (var i = 0; i < data.length; i++) {
             outputStr += "";
         }
         var output = document.getElementById('output');
 
-        if (distance > 0 && distance <= 10) {
+        if (distance > 0 && distance <= 90) {
             hit = 90;
-        } else if (distance > -10 && distance < 0) {
+        } else if (distance > -90 && distance < 0) {
             hit = -90;
         }
 

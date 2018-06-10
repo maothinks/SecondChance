@@ -42,9 +42,9 @@
     border-radius: 50%;
     bottom: 10px;
     /*box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;*/
-    z-index:1000;
-
-    background-color:deeppink;
+    z-index: 1000;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FF1493;
+    background-color: #FF1493;
 }
 
 .ring-style {

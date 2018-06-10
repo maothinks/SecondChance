@@ -13,6 +13,7 @@
     <link href="css/ring.css" rel="stylesheet" />
     <link href="css/jTinder.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/material-design-iconic-font.css" rel="stylesheet" />
 
     <link href="css/page-transitions/animations.css" rel="stylesheet" />
     <link href="css/page-transitions/component.css" rel="stylesheet" />
@@ -32,15 +33,14 @@
     ------------------------------------------------------------------------------------------------------
     -->
 
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#FF1493">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand">
-                    <br />
-                    <b id="lbl-place" style="color:white; font-size:medium">Sta Catalina</b>
+                <a class="navbar-brand" style="padding:15px; text-align:center;white-space: nowrap;">
+                    <b style="color:black;font-size:large; font-family:Bahnschrift">Second Chance</b>
                 </a>
             </div>
-            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" /></a>
+            <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" style="width:32px;height:32px" /></a>
         </div>
         <!--/.container-fluid -->
     </nav>
@@ -104,15 +104,15 @@
                             <option value="d4">23/04/2018</option>
                         </select>
                         <!--<div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
-                </div>-->
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>-->
                     </div>
                 </a>
 
                 <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:43%">
                     <div class="input-group date-time" data-provide="datepicker">
                         <!--<input type='text' class="form-control" value="08:30" />-->
-                        <select class="form-control" onchange="onTimeChanged(this)">
+                        <select id="selectTime" class="form-control" data-style="btn-info" onchange="onTimeChanged(this)">
                             <option value="20">21:30</option>
                             <option value="19">20:00</option>
                             <option value="18">19:15</option>
@@ -135,8 +135,8 @@
                             <option value="1">08:13</option>
                         </select>
                         <!--<div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
-                </div>-->
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>-->
                     </div>
                 </a>
 
@@ -146,7 +146,10 @@
             </div>
 
             <div class="btn-group btn-group-justified top-maps-statistics">
-                <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:60px" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
+                <a href="#" class="btn btn-default" id="lbl-place" value="action02" style="width:60px;">
+                    Restaurante Sta Catalina
+                </a>
+                <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:10px;color:gray" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
                     Statistics
                 </a>
             </div>
@@ -197,7 +200,7 @@
             </div>
 
             <div onclick="PageTransitions.nextPage(32, 2, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img src="img/back.png" />
+                <img style="padding:5px" src="img/back.png" />
             </div>
 
             <div id="cards" style="width:100%; height:100%; margin-right: auto; margin-left: auto; display:none; padding-bottom:50px">
@@ -306,7 +309,7 @@
             </div>
 
             <div onclick="PageTransitions.nextPage(2, 3, lastPage)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img src="img/back.png" />
+                <img style="padding:5px" src="img/back.png" />
             </div>
         </div>
 
@@ -319,7 +322,7 @@
             -->
 
         <div class="pt-page pt-page-4 second-chance-chat">
-            <div class="btn-group btn-group-justified top" style="padding-left:60px">
+            <!--<div class="btn-group btn-group-justified top" style="padding-left:60px">
 
                 <a class="btn btn-default active" id="bactivities" value="action02" style="width:45%">
                     Info
@@ -331,60 +334,66 @@
             </div>
 
             <div onclick="PageTransitions.nextPage(2, 4, lastPage)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img src="img/back.png" />
-            </div>
+                <img style="padding:3px" src="img/back.png" />
+            </div>-->
 
-            <div id="contacts" style="width:100%; height:100%; margin-right: auto; margin-left: auto">
-                <div style="height:84px">
-
-                </div>
+            <div id="chat" style="width:100%; height:100%; margin-right: auto; margin-left: auto">
                 <div style="margin-right: auto; margin-left: auto;" class="text-center">
-
-                    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
-                    <script src="https://use.typekit.net/hoy3lrg.js"></script>
-                    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
-                    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
-
                     <link href="css/chat.css" rel="stylesheet" />
 
-                    <div id="frame">
-
-
-                        <div class="content">
-                            <div class="contact-profile">
-                                <img src="img/pane/persons/img2.jpeg" alt="" />
-                                <p>Sara</p>
-                                <div class="social-media">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                </div>
-                            </div>
-                            <div class="messages">
-                                <ul>
-                                    <li class="sent">
-                                        <img src="img/pane/persons/img1.jpeg" alt="" />
-                                        <p>Second Chance Demo Chat</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="img/pane/persons/img2.jpeg" alt="" />
-                                        <p>Looks good!</p>
-                                    </li>
-                                    <li class="sent">
-                                        <img src="img/pane/persons/img1.jpeg" alt="" />
-                                        <p>sfsadf sdfSDF sdfSDF sdfSDF sdfSDFsd fSDFsdf SDFsdf SDFsdf DSFdf</p>
-                                    </li>
-                                    <li class="replies">
-                                        <img src="img/pane/persons/img2.jpeg" alt="" />
-                                        <p>sdasldkvna sdvasodv asdoviah sd;voiaisdh v;asodv as;dvoasd </p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="message-input">
-                                <div class="wrap">
-                                    <input type="text" placeholder="Write your message..." />
-                                    <!--<i class="fa fa-paperclip attachment" aria-hidden="true"></i>-->
-                                    <button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    <div class="screen">
+                        <div class="screen-container">
+                            <div class="chat">
+                                <div class="chat-container">
+                                    <div class="user-bar">
+                                        <div class="back" onclick="PageTransitions.nextPage(2, 4, lastPage)" >
+                                            <i class="zmdi zmdi-arrow-left"></i>
+                                        </div>
+                                        <div class="avatar">
+                                            <img src="img/pane/persons/img2.jpeg" alt="Avatar">
+                                        </div>
+                                        <div class="name">
+                                            <span>Sara</span>
+                                            <span class="status">online</span>
+                                        </div>
+                                        <!--<div class="actions more">
+                                            <i class="zmdi zmdi-more-vert"></i>
+                                        </div>
+                                        <div class="actions attachment">
+                                            <i class="zmdi zmdi-attachment-alt"></i>
+                                        </div>
+                                        <div class="actions">
+                                            <i class="zmdi zmdi-phone"></i>
+                                        </div>-->
+                                    </div>
+                                    <div class="conversation">
+                                        <div class="conversation-container">
+                                            <div class="message sent">
+                                                Hi Sara what do you think about Second Chance?
+                                                <span class="metadata">
+                                                    <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7" /></svg></span>
+                                                </span>
+                                            </div>
+                                            <div class="message received">
+                                                Hi Mauricio, this is amazing!!!.
+                                                <span class="metadata"><span class="time"></span></span>
+                                            </div>                                            
+                                        </div>
+                                        <form class="conversation-compose">
+                                            <div class="emoji">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="smiley" x="3147" y="3209"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z" fill="#7d8489" /></svg>
+                                            </div>
+                                            <input class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+                                            <div class="photo">
+                                                <i class="zmdi zmdi-camera"></i>
+                                            </div>
+                                            <button class="send">
+                                                <div class="circle">
+                                                    <i class="zmdi zmdi-mail-send"></i>
+                                                </div>
+                                            </button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -403,7 +412,7 @@
 
         <div class="pt-page pt-page-4 second-chance-statistics">
             <div onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img src="img/back.png" />
+                <img style="padding:5px" src="img/back.png" />
             </div>
 
             <div id="statistics" style="width:100%; height:100%; margin-right: auto; margin-left: auto;">
@@ -442,7 +451,7 @@
             </div>
 
             <div onclick="PageTransitions.nextPage(animation, 6, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img src="img/back.png" />
+                <img style="padding:5px" src="img/back.png" />
             </div>
 
             <div id="profile" style="width:100%; height:100%; margin-right: auto; margin-left: auto">
@@ -561,7 +570,7 @@
             }
         });
 
-                                        //# sourceURL=pen.js
+                                                //# sourceURL=pen.js
     </script>
 </body>
 </html>

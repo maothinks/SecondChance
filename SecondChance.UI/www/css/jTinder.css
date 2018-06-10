@@ -201,12 +201,12 @@ body {
     background-color: white;
     border: none;
     color: white;
-    padding: 3px;
+    padding: 14px;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
     bottom: 10px;
-    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
     left: 17%;
 }
 
@@ -236,7 +236,7 @@ body {
     background-color: white;
     border: none;
     color: white;
-    padding: 7px;
+    padding: 14px;
     text-align: center;
     /*text-decoration: none;
     display: inline-block;
@@ -246,7 +246,7 @@ body {
     border-radius: 50%;
     bottom: 10px;
     right: 18%;
-    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
 }
 
 

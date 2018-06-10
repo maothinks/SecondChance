@@ -50,7 +50,7 @@
 
 .top-maps {
     position: fixed;
-    top: 50px;
+    top: 48px;
     right: 0;
     z-index: 999;
     width: 100%;
@@ -59,7 +59,7 @@
 
 .top-maps-statistics {
     position: fixed;
-    top: 101px;
+    top: 98px;
     right: 0;
     z-index: 999;
     width: 100%;
