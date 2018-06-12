@@ -22,7 +22,7 @@ function initializeMap() {
     defaultPosition = new google.maps.LatLng(6.244203, -75.58121189999997);
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultPosition,
-        zoom: 6,
+        zoom: 14,
         mapTypeId: 'terrain'
     });
 
@@ -33,48 +33,48 @@ function initializeMap() {
 
 function addMarkers() {
     // Markers
-    addMarker(1, new google.maps.LatLng(3.6246555626684307, -76.54729401069983));
-    addMarker(2, new google.maps.LatLng(4.014732562247033, -76.19958179090412));
-    addMarker(3, new google.maps.LatLng(4.504153648374109, -76.1482559370246));
-    addMarker(4, new google.maps.LatLng(4.799021826796936, -75.67663216982277));
-    addMarker(5, new google.maps.LatLng(5.33522145897845, -76.14025602136047));
-    addMarker(6, new google.maps.LatLng(5.584284041555005, -76.54923826790031));
-    addMarker(7, new google.maps.LatLng(5.842113772256935, -76.3922543927684));
-    addMarker(8, new google.maps.LatLng(6.032250396593195, -76.11320206072475));
-    addMarker(9, new google.maps.LatLng(6.200476702881321, -75.6144231661811));
-    addMarker(10, new google.maps.LatLng(6.74513343077512, -75.71446389771404));
-    addMarker(11, new google.maps.LatLng(7.14633231645950, -76.07507794856156));
-    addMarker(12, new google.maps.LatLng(7.624152603564998, -76.459024781425));
-    addMarker(13, new google.maps.LatLng(8.183483125970875, -76.6729920545381));
-    addMarker(14, new google.maps.LatLng(8.433672671260823, -76.35997543756014));
-    addMarker(15, new google.maps.LatLng(8.672145783613004, -75.93157772507845));
-    addMarker(16, new google.maps.LatLng(9.194285921913059, -75.67274471152086));
-    addMarker(17, new google.maps.LatLng(9.295753579000955, -75.317256535519));
-    addMarker(18, new google.maps.LatLng(9.848240767181084, -75.5292568041221));
-    addMarker(19, new google.maps.LatLng(10.363844930163014, -75.32321494731542));
-    addMarker(20, new google.maps.LatLng(10.613376345815507, -75.24850872072813));
+    addMarker(1, new google.maps.LatLng (6.242112619448989  , -75.58958039212644 ));
+    addMarker(2, new google.maps.LatLng (6.238694402668167  , -75.59028313088834 ));
+    addMarker(3, new google.maps.LatLng (6.239729550891222  , -75.58176443505704 ));
+    addMarker(4, new google.maps.LatLng (6.238828917366308  , -75.57433471608579 ));
+    addMarker(5, new google.maps.LatLng (6.237666398920562  , -75.57116970944821 ));
+    addMarker(6, new google.maps.LatLng (6.2344187993278375 , -75.57007536817014 ));
+    addMarker(7, new google.maps.LatLng (6.23008330252177   , -75.5698876135391  ));
+    addMarker(8, new google.maps.LatLng (6.228483479154979  , -75.5697803251785  ));
+    addMarker(9, new google.maps.LatLng (6.226403225248964  , -75.56909079023859 ));
+    addMarker(10, new google.maps.LatLng(6.222808923403714  , -75.56931609579584 ));
+    addMarker(11, new google.maps.LatLng(6.214884392471358  , -75.56997055479547 ));
+    addMarker(12, new google.maps.LatLng(6.211481997224855  , -75.56929463812372 ));
+    addMarker(13, new google.maps.LatLng(6.209679465439622  , -75.56591505476496 ));
+    addMarker(14, new google.maps.LatLng(6.207551616722727  , -75.56534374424479 ));
+    addMarker(15, new google.maps.LatLng(6.200862266255487  , -75.56612694927713 ));
+    addMarker(16, new google.maps.LatLng(6.197075799492845  , -75.5655261344578  ));
+    addMarker(17, new google.maps.LatLng( 6.189822773217568 , -75.56962454983255 ));
+    addMarker(18, new google.maps.LatLng( 6.1804790220268   , -75.56599820324436 ));
+    addMarker(19, new google.maps.LatLng( 6.177279069291005 , -75.56123460003391 ));
+    addMarker(20, new google.maps.LatLng(6.173119101817878, -75.56333745190159 ));
 
     var flightPlanCoordinates = [
-        { lat: 3.6246555626684307, lng: -76.54729401069983},
-        { lat: 4.014732562247033, lng: -76.19958179090412 },
-        { lat: 4.504153648374109, lng: -76.1482559370246 },
-        { lat: 4.799021826796936, lng: -75.67663216982277 },
-        { lat: 5.33522145897845, lng: -76.14025602136047 },
-        { lat: 5.584284041555005, lng: -76.54923826790031 },
-        { lat: 5.842113772256935, lng: -76.3922543927684 },
-        { lat: 6.032250396593195, lng: -76.11320206072475 },
-        { lat: 6.200476702881321, lng: -75.6144231661811},
-        { lat: 6.74513343077512, lng:-75.71446389771404 },
-        { lat: 7.14633231645950, lng:-76.07507794856156 },
-        { lat: 7.624152603564998, lng: -76.459024781425 },
-        { lat: 8.183483125970875, lng: -76.6729920545381 },
-        { lat: 8.433672671260823, lng: -76.35997543756014 },
-        { lat: 8.672145783613004, lng: -75.93157772507845 },
-        { lat: 9.194285921913059, lng: -75.67274471152086 },
-        { lat: 9.295753579000955, lng: -75.317256535519 },
-        { lat: 9.848240767181084, lng: -75.5292568041221 },
-        { lat: 10.363844930163014, lng: -75.32321494731542 },
-        {lat: 10.613376345815507, lng: -75.24850872072813 }
+        { lat:6.242112619448989  ,lng: -75.58958039212644 },
+        { lat:6.238694402668167  ,lng: -75.59028313088834 },
+        { lat:6.239729550891222  ,lng: -75.58176443505704 },
+        { lat:6.238828917366308  ,lng: -75.57433471608579 },
+        { lat:6.237666398920562  ,lng: -75.57116970944821 },
+        { lat:6.2344187993278375 ,lng: -75.57007536817014 },
+        { lat:6.23008330252177   ,lng: -75.5698876135391  },
+        { lat:6.228483479154979  ,lng: -75.5697803251785  },
+        { lat:6.226403225248964  ,lng: -75.56909079023859 },
+        { lat:6.222808923403714  ,lng: -75.56931609579584 },
+        { lat:6.214884392471358  ,lng: -75.56997055479547 },
+        { lat:6.211481997224855  ,lng: -75.56929463812372 },
+        { lat:6.209679465439622  ,lng: -75.56591505476496 },
+        { lat:6.207551616722727  ,lng: -75.56534374424479 },
+        { lat:6.200862266255487  ,lng: -75.56612694927713 },
+        { lat:6.197075799492845  ,lng: -75.5655261344578  },
+        { lat: 6.189822773217568 ,lng: -75.56962454983255 },
+        { lat: 6.1804790220268   ,lng: -75.56599820324436 },
+        { lat: 6.177279069291005 ,lng: -75.56123460003391 },
+        { lat: 6.173119101817878 ,lng: -75.56333745190159 }
     ];
 
     var flightPath = new google.maps.Polyline({
@@ -142,26 +142,26 @@ function updateCurrentMarker() {
     map.setCenter(position);
 
     switch (currentId.toString()) {
-        case "20": { $("#selectTime").val(20); $("#lbl-place").text("Restaurante Sta Catalina"); break; }
-        case "19": { $("#selectTime").val(19); $("#lbl-place").text("Hosteria Los Vientos"); break; }
-        case "18": { $("#selectTime").val(18); $("#lbl-place").text("Pasteleria Las Brisas"); break; }
-        case "17": { $("#selectTime").val(17); $("#lbl-place").text("Centro Comercial Orion"); break; }
-        case "16": { $("#selectTime").val(16); $("#lbl-place").text("Urbanizacion Altos de Lorica"); break; }
-        case "15": { $("#selectTime").val(15); $("#lbl-place").text("Don pancho Cafe-Bar"); break; }
-        case "14": { $("#selectTime").val(14); $("#lbl-place").text("BodyTech Gym"); break; }
-        case "13": { $("#selectTime").val(13); $("#lbl-place").text("Minorista de Turbo"); break; }
-        case "12": { $("#selectTime").val(12); $("#lbl-place").text("Revuelteria Maria Ana"); break; }
-        case "11": { $("#selectTime").val(11); $("#lbl-place").text("C.C Agua Clara"); break; }
-        case "10": { $("#selectTime").val(10); $("#lbl-place").text("Finca Los Benzos"); break; }
-        case "9": { $("#selectTime").val(9); $("#lbl-place").text("C.C Ciudad Azul"); break; }
-        case "8": { $("#selectTime").val(8); $("#lbl-place").text("Club Altos de Concordia"); break; }
-        case "7": { $("#selectTime").val(7); $("#lbl-place").text("Restaurante El Carmen"); break; }
-        case "6": { $("#selectTime").val(6); $("#lbl-place").text("Cafe Internet FastPoint"); break; }
-        case "5": { $("#selectTime").val(5); $("#lbl-place").text("Supermercado Tamana"); break; }
-        case "4": { $("#selectTime").val(4); $("#lbl-place").text("Gimnasio EnForma"); break; }
-        case "3": { $("#selectTime").val(3); $("#lbl-place").text("Vereda La Union"); break; }
-        case "2": { $("#selectTime").val(2); $("#lbl-place").text("Billares la Luz"); break; }
-        case "1": { $("#selectTime").val(1); $("#lbl-place").text("Farmacia AlCosto"); break; }
+        case "1": { $("#selectTime").val(20); $("#lbl-place").text("C.C Unicentro"); break; }
+        case "2": { $("#selectTime").val(19); $("#lbl-place").text("Hamburguesas del Oeste"); break; }
+        case "3": { $("#selectTime").val(18); $("#lbl-place").text("Discoteca Carboncito"); break; }
+        case "4": { $("#selectTime").val(17); $("#lbl-place").text("Metrofrenos"); break; }
+        case "4": { $("#selectTime").val(16); $("#lbl-place").text("EPS San Diego"); break; }
+        case "6": { $("#selectTime").val(15); $("#lbl-place").text("Casino Rio"); break; }
+        case "7": { $("#selectTime").val(14); $("#lbl-place").text("C.C Premium Plaza"); break; }
+        case "8": { $("#selectTime").val(13); $("#lbl-place").text("Colpensiones"); break; }
+        case "9": { $("#selectTime").val(12); $("#lbl-place").text("Reposteria Astor"); break; }
+        case "10": { $("#selectTime").val(11); $("#lbl-place").text("Centro Automotriz"); break; }
+        case "11": { $("#selectTime").val(10); $("#lbl-place").text("Colinas del Poblado"); break; }
+        case "12": { $("#selectTime").val(9); $("#lbl-place").text("Chef Burger Poblado"); break; }
+        case "13": { $("#selectTime").val(8); $("#lbl-place").text("Crepes & Waffles"); break; }
+        case "14": { $("#selectTime").val(7); $("#lbl-place").text("Bogota Beer Company"); break; }
+        case "15": { $("#selectTime").val(6); $("#lbl-place").text("Hotel Casa Victoria"); break; }
+        case "16": { $("#selectTime").val(5); $("#lbl-place").text("Dominos Pizza Visitacion"); break; }
+        case "17": { $("#selectTime").val(4); $("#lbl-place").text("Museo el castillo"); break; }
+        case "18": { $("#selectTime").val(3); $("#lbl-place").text("Parroquia San Lucas"); break; }
+        case "19": { $("#selectTime").val(2); $("#lbl-place").text("Colegio Montessori"); break; }
+        case "20": { $("#selectTime").val(1); $("#lbl-place").text("Urbanizacion Burdeos"); break; }
     }
 }
 

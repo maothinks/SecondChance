@@ -91,6 +91,14 @@ var PageTransitions = (function () {
     }
 
     function nextPage(options, cur, next) {
+        if (next == 4) {
+            $("#nav-top").hide();
+        } else {
+            $("#nav-top").show();
+        }
+
+        
+
         if (cur != next) {
             currentPage = next;
             lastPage = cur;

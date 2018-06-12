@@ -94,20 +94,20 @@ body {
         top: 50%;
     }
 
-    .user-bar .actions {
+    .user-bar .actions-chat {
         float: right;
         margin: 0 0 0 20px;
     }
 
-        .user-bar .actions.more {
+        .user-bar .actions-chat.more {
             margin: 0 12px 0 32px;
         }
 
-        .user-bar .actions.attachment {
+        .user-bar .actions-chat.attachment {
             margin: 0 0 0 30px;
         }
 
-            .user-bar .actions.attachment i {
+            .user-bar .actions-chat.attachment i {
                 display: block;
                 transform: rotate(-45deg);
             }
@@ -133,7 +133,7 @@ body {
         margin: 0 0 0 8px;
         overflow: hidden;
         white-space: nowrap;
-        width: 110px;
+        /*width: 110px;*/
     }
 
     .user-bar .status {
@@ -414,10 +414,11 @@ body {
 
     .screen-container {
         position: absolute;
-        top: 48px;
+        top: 0;
         left: 0;
         right: 0;
         bottom: 0;
+        z-index:10000;
     }
 
     .conversation {
@@ -425,6 +426,6 @@ body {
     }
 
         .conversation .conversation-container {
-            height: calc(100vh - 160px);
+            height: calc(100vh - 120px);
         }
 }
