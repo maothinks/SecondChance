@@ -143,7 +143,7 @@ function updateCurrentMarker() {
 
     switch (currentId.toString()) {
         case "1": { $("#selectTime").val(20); $("#lbl-place").text("C.C Unicentro"); break; }
-        case "2": { $("#selectTime").val(19); $("#lbl-place").text("Hamburguesas del Oeste"); break; }
+        case "2": { $("#selectTime").val(19); $("#lbl-place").text("Burger Del Oeste"); break; }
         case "3": { $("#selectTime").val(18); $("#lbl-place").text("Discoteca Carboncito"); break; }
         case "4": { $("#selectTime").val(17); $("#lbl-place").text("Metrofrenos"); break; }
         case "4": { $("#selectTime").val(16); $("#lbl-place").text("EPS San Diego"); break; }
@@ -157,7 +157,7 @@ function updateCurrentMarker() {
         case "13": { $("#selectTime").val(8); $("#lbl-place").text("Crepes & Waffles"); break; }
         case "14": { $("#selectTime").val(7); $("#lbl-place").text("Bogota Beer Company"); break; }
         case "15": { $("#selectTime").val(6); $("#lbl-place").text("Hotel Casa Victoria"); break; }
-        case "16": { $("#selectTime").val(5); $("#lbl-place").text("Dominos Pizza Visitacion"); break; }
+        case "16": { $("#selectTime").val(5); $("#lbl-place").text("Dominos Pizza"); break; }
         case "17": { $("#selectTime").val(4); $("#lbl-place").text("Museo el castillo"); break; }
         case "18": { $("#selectTime").val(3); $("#lbl-place").text("Parroquia San Lucas"); break; }
         case "19": { $("#selectTime").val(2); $("#lbl-place").text("Colegio Montessori"); break; }
@@ -263,6 +263,6 @@ function initializeSidebar() {
 }
 
 function onTimeChanged(e) {
-    currentId = $(e).val();
+    currentId = parseInt($(e).val());
     updateCurrentMarker();
 }
