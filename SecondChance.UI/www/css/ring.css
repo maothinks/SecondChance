@@ -44,10 +44,38 @@
     /*box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;*/
     z-index: 1000;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FF1493;
-    background-color: #FF1493;
+    background-color: black;
+    opacity: 0.8
 }
 
 .ring-style {
-    padding-top:7px;
-    height:100px;    
+    padding-top: 7px;
+    height: 175px;
+    background-color: transparent;
+    border-radius: 50%;
+    opacity: 0.9
+}
+
+.nav-top-color {
+    background: rgb(63,34,195);
+    background: linear-gradient(41deg, rgba(63,34,195,1) 0%, rgba(253,45,60,1) 100%);
+}
+
+body {
+    width: 100%;
+    height: 2000px;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 12px solid #000;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }

@@ -3779,8 +3779,8 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: fixed;
-    right: 0;
-    left: 0;
+    right: 12px;
+    left: 12px;
     border-width: 0 0 1px
 }
 

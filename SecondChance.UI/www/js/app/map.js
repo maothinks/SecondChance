@@ -23,7 +23,9 @@ function initializeMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultPosition,
         zoom: 14,
-        mapTypeId: 'terrain'
+        mapTypeControl: false,
+        streetViewControl: false,/*,
+        mapTypeId: 'terrain'*/
     });
 
 
@@ -77,13 +79,29 @@ function addMarkers() {
         { lat: 6.173119101817878 ,lng: -75.56333745190159 }
     ];
 
+    var lineSymbol = {
+        path: 'M 0,-1 0,1',
+        strokeOpacity: 1,
+        scale: 4
+    };
+
     var flightPath = new google.maps.Polyline({
         path: flightPlanCoordinates,
-        geodesic: true,
-        strokeColor: '#000000',
-        strokeOpacity: 1.0,
-        strokeWeight: 10
+        strokeOpacity: 0,
+        icons: [{
+            icon: lineSymbol,
+            offset: '0',
+            repeat: '20px'
+        }]
     });
+
+    //var flightPath = new google.maps.Polyline({
+    //    path: flightPlanCoordinates,
+    //    geodesic: true,
+    //    strokeColor: '#000000',
+    //    strokeOpacity: 1.0,
+    //    strokeWeight: 2
+    //});
 
     flightPath.setMap(map);
 }
