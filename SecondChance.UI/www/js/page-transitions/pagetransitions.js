@@ -64,8 +64,8 @@ var PageTransitions = (function () {
         };
 
         $("body").keyup(function (event) {
-            var key = event.which,
-                animation = $('#dl-menu').data().dlmenu.$el.data('animation');
+            var key = event.which;
+            var animation = $('#dl-menu').data() != undefined ? $('#dl-menu').data().dlmenu.$el.data('animation') : undefined;
 
             if (key == keys.RIGHT || key == keys.SPACE || key == keys.ENTER || key == keys.DOWN || key == keys.PAGE_DOWN) {
                 nextPage(animcursorCheck());
