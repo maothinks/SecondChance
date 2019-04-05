@@ -3272,7 +3272,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     display: table;
     width: 100%;
     border-collapse: separate;
-    table-layout: fixed
+    table-layout: fixed;
 }
 
     .btn-group-justified .btn {
@@ -3779,9 +3779,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 .navbar-fixed-top, .navbar-fixed-bottom {
     position: fixed;
-    right: 12px;
-    left: 12px;
-    border-width: 0 0 1px
+    right: 0;
+    left: 0;
+    border-width: 0 0 0px
 }
 
 @media(min-width:768px) {

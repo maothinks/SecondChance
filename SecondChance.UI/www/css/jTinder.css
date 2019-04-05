@@ -14,7 +14,7 @@ body {
     height: 100%;
     padding-left: 4%;
     padding-right: 0%;
-    padding-top: 110px;
+    padding-top: 70px;
 }
     
 #tinderslide {
@@ -109,24 +109,24 @@ body {
     backface-visibility: hidden;
 }
 
-#tinderslide .card-name, #tinderslide .card-name {
-    width: 100%;
-    position: absolute;
-    top: 10px;
-    z-index: 1;
-    overflow: hidden;
-    -webkit-transform: translate3d(0%,0,0) scale3d(1,1,1);
-    -moz-transform: translate3d(0%,0,0) scale3d(1,1,1);
-    -ms-transform: translate3d(0%,0,0) scale3d(1,1,1);
-    -o-transform: translate3d(0%,0,0) scale3d(1,1,1);
-    transform: translate3d(0%,0,0) scale3d(1,1,1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    font-family: 'Palatino Linotype';
-    font-style: italic;
-    color: white;
-    font-size:small;
-}
+    #tinderslide .card-name, #tinderslide .card-name {
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        overflow: hidden;
+        -webkit-transform: translate3d(0%,0,0) scale3d(1,1,1);
+        -moz-transform: translate3d(0%,0,0) scale3d(1,1,1);
+        -ms-transform: translate3d(0%,0,0) scale3d(1,1,1);
+        -o-transform: translate3d(0%,0,0) scale3d(1,1,1);
+        transform: translate3d(0%,0,0) scale3d(1,1,1);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-family: 'Palatino Linotype';
+        font-style: italic;
+        color: rgb(63,34,195);
+        font-size: small;
+    }
 
 #tinderslide .dislike {
     right: 45px;
@@ -180,15 +180,16 @@ body {
 }
 
 .footer {
-    height: 30px;
+    height: 20px;
     width: 100%;
-    background-color:  black;
+    background: rgb(63,34,195);
+    background: linear-gradient(41deg, rgba(63,34,195,1) 0%, rgba(253,45,60,1) 100%);
     bottom: 0;
-    position: fixed;    
+    position: fixed;
     z-index: 100;
     text-align: center;
-    /*border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;*/
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
 }
 
 .tab {
@@ -198,16 +199,18 @@ body {
 
 .btn-dislike {
     position: fixed;
-    background-color: white;
+    background: rgb(63,34,195);
+    background: linear-gradient(41deg, rgba(63,34,195,1) 0%, rgba(253,45,60,1) 100%);
     border: none;
     color: white;
-    padding: 14px;
+    padding: 7px;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
     bottom: 10px;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
     left: 17%;
+    opacity:0.9;
 }
 
 #tinderslide .chat {
@@ -233,7 +236,8 @@ body {
 
 .btn-like {
     position: fixed;
-    background-color: white;
+    background: rgb(63,34,195);
+    background: linear-gradient(41deg, rgba(63,34,195,1) 0%, rgba(253,45,60,1) 100%);
     border: none;
     color: white;
     padding: 14px;
@@ -247,6 +251,7 @@ body {
     bottom: 10px;
     right: 18%;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
+    opacity: 0.9;
 }
 
 

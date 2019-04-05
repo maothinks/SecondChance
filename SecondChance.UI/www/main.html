@@ -38,7 +38,7 @@
             <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" style="padding:15px; text-align:center;white-space: nowrap;">
-                        <b style="color:black;font-size:large; font-family:Bahnschrift" id="lbl-place">Urbanizacion Burdeos</b>
+                        <b style="color:white;font-weight:bold;font-size:large; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif" id="lbl-place">Urbanizacion Burdeos</b>
                     </a>
                 </div>
                 <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><img src="img/menu.png" style="width:32px;height:32px" /></a>
@@ -94,26 +94,29 @@
         -->
 
             <div class="pt-page pt-page-1 second-chance-maps">
-                <div class="btn-group btn-group-justified top-maps">
-                    <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:43%">
+
+
+                <div class="btn-group-justified top-maps top-bar-dates">
+                    
+                    <div class="btn btn-default" id="bactivities" value="action02" style="width:43%; background-color:transparent">
                         <div class="input-group date-time" data-provide="datepicker">
                             <!--<input type='text' class="form-control" value="26/04/2018" />-->
-                            <select class="form-control">
+                            <select class="form-control" style="font-size:large; font-weight:bolder">
                                 <option value="d1">26/04/2018</option>
                                 <option value="d2">25/04/2018</option>
                                 <option value="d3">24/04/2018</option>
                                 <option value="d4">23/04/2018</option>
                             </select>
                             <!--<div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
-                        </div>-->
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>-->
                         </div>
-                    </a>
+                    </div>
 
-                    <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:43%">
+                    <div class="btn btn-default" id="bactivities" value="action02" style="width:43%;background-color:transparent">
                         <div class="input-group date-time" data-provide="datepicker">
                             <!--<input type='text' class="form-control" value="08:30" />-->
-                            <select id="selectTime" class="form-control" data-style="btn-info" onchange="onTimeChanged(this)">
+                            <select id="selectTime" class="form-control" onchange="onTimeChanged(this)" style="font-size:large; font-weight:bolder">
                                 <option value="20">21:30</option>
                                 <option value="19">20:00</option>
                                 <option value="18">19:15</option>
@@ -136,23 +139,19 @@
                                 <option value="1">08:13</option>
                             </select>
                             <!--<div class="input-group-addon">
-                            <span class="glyphicon glyphicon-th"></span>
-                        </div>-->
+                    <span class="glyphicon glyphicon-th"></span>
+                </div>-->
                         </div>
-                    </a>
-
-                    <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:60px">
-                        <img src="img/radar.png" />
-                    </a>
+                    </div>
                 </div>
 
                 <div class="btn-group btn-group-justified top-maps-statistics">
-                    <a href="#" class="btn btn-default" id="bactivities" value="action02" style="width:100%;color:fuchsia" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
+                    <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
                         <b>Statistics</b>
-                    </a>
+                    </div>
                 </div>
 
-                <div style="height:100%;padding-bottom:30px;padding-top:134px;">
+                <div style="height:100%;padding-bottom:0;padding-top:45px;">
                     <div id="map"></div>
                 </div>
 
@@ -179,7 +178,7 @@
         -->
 
             <div class="pt-page pt-page-2 second-chance-cards">
-                <div class="btn-group btn-group-justified top">
+                <!--<div class="btn-group btn-group-justified top">
                     <a onclick="PageTransitions.nextPage(32, 2, 1)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
                         <img style="padding:5px" src="img/back.png" />
                     </a>
@@ -191,7 +190,7 @@
                     <a onclick="PageTransitions.nextPage(animation, 2, 3)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
                         Contacts
                     </a>
-                </div>
+                </div>-->
 
                 <!--<div onclick="PageTransitions.nextPage(32, 2, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
                 <img style="padding:5px" src="img/back.png" />
@@ -222,7 +221,7 @@
                                     <div class="dislike"></div>
                                 </li>
                                 <li class="pane3">
-                                    <div class="card-name"><h1><b>SUSIE</b> </h1></div>
+                                    <div class="card-name"><h1><b>MARIA</b> </h1></div>
                                     <div class="img"></div>
                                     <div class="like"></div>
                                     <div class="dislike"></div>
@@ -238,7 +237,7 @@
                                     <!--<div class="chat"><a id="img-4" class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
                                 </li>
                                 <li class="pane5">
-                                    <div class="card-name"><h1><b>SILVANA</b> </h1></div>
+                                    <div class="card-name"><h1><b>SUSANA</b> </h1></div>
                                     <div class="img"></div>
                                     <div class="like"></div>
                                     <div class="dislike"></div>
@@ -276,7 +275,7 @@
                     <!-- jTinder trigger by buttons  -->
 
                     <div class="footer">
-                        <a class="btn-dislike"><img src="img/delete.png" /></a>
+                        <a class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
                         <a class="btn-like"><img src="img/chat-card.png" /></a>
                     </div>
 
@@ -372,7 +371,17 @@
                                                     </span>
                                                 </div>
                                                 <div class="message received">
-                                                    Hi Mauricio, this is amazing!!!.
+                                                    Hi Zohar, this is amazing!!!.
+                                                    <span class="metadata"><span class="time"></span></span>
+                                                </div>
+                                                <div class="message sent">
+                                                    Thanks Sara, you are amazing too!! :P
+                                                    <span class="metadata">
+                                                        <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7" /></svg></span>
+                                                    </span>
+                                                </div>
+                                                <div class="message received">
+                                                    Haha Thanks Zohar ;)
                                                     <span class="metadata"><span class="time"></span></span>
                                                 </div>
                                             </div>
@@ -433,7 +442,6 @@
                         <b style="color:gray;font-size:xx-large">Statistics</b>
                         <br />
                         <br />
-                        <br />
                         <img style="width:300px" src="img/pane/Chart.png" />
                     </div>
                 </div>
@@ -473,14 +481,14 @@
                             <div style="height:85px">
 
                             </div>
-                            <div class="span3 well" style="color:black">
+                            <div class="span3" style="color:black">
                                 <center>
+                                    <br />
+                                    <br />
                                     <a href="#" data-toggle="modal"><img src="img/pane/persons/img1.jpeg" name="aboutme" width="140" height="140" class="img-circle"></a>
-                                    <hr />
+                                    <br />
                                     <h3><b>Mauricio Zapata </b></h3>
-                                    <br />
                                     <p>Software developer</p>
-                                    <br />
                                     <p>Medellin, Colombia.<br></p>
                                 </center>
 

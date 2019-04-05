@@ -23,8 +23,9 @@ function initializeMap() {
     map = new google.maps.Map(document.getElementById('map'), {
         center: defaultPosition,
         zoom: 14,
+        disableDefaultUI: true/*,
         mapTypeControl: false,
-        streetViewControl: false,/*,
+        streetViewControl: false,
         mapTypeId: 'terrain'*/
     });
 
