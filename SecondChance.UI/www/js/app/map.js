@@ -31,53 +31,53 @@ function initializeMap() {
 
 
     addMarkers();
-    
+
 }
 
 function addMarkers() {
     // Markers
-    addMarker(1, new google.maps.LatLng (6.242112619448989  , -75.58958039212644 ));
-    addMarker(2, new google.maps.LatLng (6.238694402668167  , -75.59028313088834 ));
-    addMarker(3, new google.maps.LatLng (6.239729550891222  , -75.58176443505704 ));
-    addMarker(4, new google.maps.LatLng (6.238828917366308  , -75.57433471608579 ));
-    addMarker(5, new google.maps.LatLng (6.237666398920562  , -75.57116970944821 ));
-    addMarker(6, new google.maps.LatLng (6.2344187993278375 , -75.57007536817014 ));
-    addMarker(7, new google.maps.LatLng (6.23008330252177   , -75.5698876135391  ));
-    addMarker(8, new google.maps.LatLng (6.228483479154979  , -75.5697803251785  ));
-    addMarker(9, new google.maps.LatLng (6.226403225248964  , -75.56909079023859 ));
-    addMarker(10, new google.maps.LatLng(6.222808923403714  , -75.56931609579584 ));
-    addMarker(11, new google.maps.LatLng(6.214884392471358  , -75.56997055479547 ));
-    addMarker(12, new google.maps.LatLng(6.211481997224855  , -75.56929463812372 ));
-    addMarker(13, new google.maps.LatLng(6.209679465439622  , -75.56591505476496 ));
-    addMarker(14, new google.maps.LatLng(6.207551616722727  , -75.56534374424479 ));
-    addMarker(15, new google.maps.LatLng(6.200862266255487  , -75.56612694927713 ));
-    addMarker(16, new google.maps.LatLng(6.197075799492845  , -75.5655261344578  ));
-    addMarker(17, new google.maps.LatLng( 6.189822773217568 , -75.56962454983255 ));
-    addMarker(18, new google.maps.LatLng( 6.1804790220268   , -75.56599820324436 ));
-    addMarker(19, new google.maps.LatLng( 6.177279069291005 , -75.56123460003391 ));
-    addMarker(20, new google.maps.LatLng(6.173119101817878, -75.56333745190159 ));
+    addMarker(1, new google.maps.LatLng(6.242112619448989, -75.58958039212644));
+    addMarker(2, new google.maps.LatLng(6.238694402668167, -75.59028313088834));
+    addMarker(3, new google.maps.LatLng(6.239729550891222, -75.58176443505704));
+    addMarker(4, new google.maps.LatLng(6.238828917366308, -75.57433471608579));
+    addMarker(5, new google.maps.LatLng(6.237666398920562, -75.57116970944821));
+    addMarker(6, new google.maps.LatLng(6.2344187993278375, -75.57007536817014));
+    addMarker(7, new google.maps.LatLng(6.23008330252177, -75.5698876135391));
+    addMarker(8, new google.maps.LatLng(6.228483479154979, -75.5697803251785));
+    addMarker(9, new google.maps.LatLng(6.226403225248964, -75.56909079023859));
+    addMarker(10, new google.maps.LatLng(6.222808923403714, -75.56931609579584));
+    addMarker(11, new google.maps.LatLng(6.214884392471358, -75.56997055479547));
+    addMarker(12, new google.maps.LatLng(6.211481997224855, -75.56929463812372));
+    addMarker(13, new google.maps.LatLng(6.209679465439622, -75.56591505476496));
+    addMarker(14, new google.maps.LatLng(6.207551616722727, -75.56534374424479));
+    addMarker(15, new google.maps.LatLng(6.200862266255487, -75.56612694927713));
+    addMarker(16, new google.maps.LatLng(6.197075799492845, -75.5655261344578));
+    addMarker(17, new google.maps.LatLng(6.189822773217568, -75.56962454983255));
+    addMarker(18, new google.maps.LatLng(6.1804790220268, -75.56599820324436));
+    addMarker(19, new google.maps.LatLng(6.177279069291005, -75.56123460003391));
+    addMarker(20, new google.maps.LatLng(6.173119101817878, -75.56333745190159));
 
     var flightPlanCoordinates = [
-        { lat:6.242112619448989  ,lng: -75.58958039212644 },
-        { lat:6.238694402668167  ,lng: -75.59028313088834 },
-        { lat:6.239729550891222  ,lng: -75.58176443505704 },
-        { lat:6.238828917366308  ,lng: -75.57433471608579 },
-        { lat:6.237666398920562  ,lng: -75.57116970944821 },
-        { lat:6.2344187993278375 ,lng: -75.57007536817014 },
-        { lat:6.23008330252177   ,lng: -75.5698876135391  },
-        { lat:6.228483479154979  ,lng: -75.5697803251785  },
-        { lat:6.226403225248964  ,lng: -75.56909079023859 },
-        { lat:6.222808923403714  ,lng: -75.56931609579584 },
-        { lat:6.214884392471358  ,lng: -75.56997055479547 },
-        { lat:6.211481997224855  ,lng: -75.56929463812372 },
-        { lat:6.209679465439622  ,lng: -75.56591505476496 },
-        { lat:6.207551616722727  ,lng: -75.56534374424479 },
-        { lat:6.200862266255487  ,lng: -75.56612694927713 },
-        { lat:6.197075799492845  ,lng: -75.5655261344578  },
-        { lat: 6.189822773217568 ,lng: -75.56962454983255 },
-        { lat: 6.1804790220268   ,lng: -75.56599820324436 },
-        { lat: 6.177279069291005 ,lng: -75.56123460003391 },
-        { lat: 6.173119101817878 ,lng: -75.56333745190159 }
+        { lat: 6.242112619448989, lng: -75.58958039212644 },
+        { lat: 6.238694402668167, lng: -75.59028313088834 },
+        { lat: 6.239729550891222, lng: -75.58176443505704 },
+        { lat: 6.238828917366308, lng: -75.57433471608579 },
+        { lat: 6.237666398920562, lng: -75.57116970944821 },
+        { lat: 6.2344187993278375, lng: -75.57007536817014 },
+        { lat: 6.23008330252177, lng: -75.5698876135391 },
+        { lat: 6.228483479154979, lng: -75.5697803251785 },
+        { lat: 6.226403225248964, lng: -75.56909079023859 },
+        { lat: 6.222808923403714, lng: -75.56931609579584 },
+        { lat: 6.214884392471358, lng: -75.56997055479547 },
+        { lat: 6.211481997224855, lng: -75.56929463812372 },
+        { lat: 6.209679465439622, lng: -75.56591505476496 },
+        { lat: 6.207551616722727, lng: -75.56534374424479 },
+        { lat: 6.200862266255487, lng: -75.56612694927713 },
+        { lat: 6.197075799492845, lng: -75.5655261344578 },
+        { lat: 6.189822773217568, lng: -75.56962454983255 },
+        { lat: 6.1804790220268, lng: -75.56599820324436 },
+        { lat: 6.177279069291005, lng: -75.56123460003391 },
+        { lat: 6.173119101817878, lng: -75.56333745190159 }
     ];
 
     var lineSymbol = {
@@ -118,9 +118,9 @@ function addMarker(id, location) {
             draggable: false,
         });
 
-        
+
     } else {
-        
+
         marker = new google.maps.Marker({
             position: location,
             map: null,
@@ -222,49 +222,112 @@ function initializeRing() {
     function setOutput(data) {
         var outputStr = "> ";
         var distance = parseInt(data[2][1]);
-        
-        for (var i = 0; i < data.length; i++) {
-            outputStr += "";
-        }
-        var output = document.getElementById('output');
 
-        if (distance > 0 && distance <= 90) {
-            hit = 90;
-        } else if (distance > -90 && distance < 0) {
-            hit = -90;
-        }
-
-        if (hit != 0) {
-            if (distance > 0 && distance > hit) {
-                hit += 90;
-               
-                if (currentId <= 20) {
-                    currentId += 1;
-                    updateCurrentMarker();
+        switch (currentPage) {
+            case 1: {
+                for (var i = 0; i < data.length; i++) {
+                    outputStr += "";
                 }
-            }
 
-            if (distance < 0 && distance < hit) {
-                hit -= 90;
+                if (distance > 0 && distance <= 90) {
+                    hit = 90;
+                } else if (distance > -90 && distance < 0) {
+                    hit = -90;
+                }
+
+                if (hit != 0) {
+                    if (distance > 0 && distance > hit) {
+                        hit += 90;
+
+                        if (currentId <= 20) {
+                            currentId += 1;
+                            updateCurrentMarker();
+                        }
+                    }
+
+                    if (distance < 0 && distance < hit) {
+                        hit -= 90;
+
+                        if (currentId >= 1) {
+                            currentId -= 1;
+                            updateCurrentMarker();
+                        }
+                    }
+                }
+                //output.innerHTML = data[2][0] + ": " + data[2][1];
+                break;
+            }
+            case 7: {
+                var vid = document.getElementById("myVideo");
                 
-
-                if (currentId >= 1) {
-                    currentId -= 1;
-                    updateCurrentMarker();
+                for (var i = 0; i < data.length; i++) {
+                    outputStr += "";
                 }
-            }
-        }
-        //output.innerHTML = data[2][0] + ": " + data[2][1];
-    }
 
+                if (distance > 0 && distance <= 90) {
+                    hit = 90;
+                } else if (distance > -90 && distance < 0) {
+                    hit = -90;
+                }
+
+                if (hit != 0) {
+                    if (distance > 0 && distance > hit) {
+                        hit += 90;
+
+                        vid.currentTime = vid.currentTime + 1;
+                    }
+
+                    if (distance < 0 && distance < hit) {
+                        hit -= 90;
+
+                        if (currentId >= 1) {
+                            vid.currentTime = vid.currentTime - 1;
+                        }
+                    }
+                }
+
+                break;
+            }
+            default:
+                break;
+        }
+
+
+    }
 
     var tapElementOne = document.getElementById('rotatable');
     var regionOne = new ZingTouch.Region(tapElementOne, true, false);
     var longTap = new ZingTouch.Tap({
         maxDelay: 1000
-    })
+    });
+
     regionOne.bind(tapElementOne, longTap, function (e) {
-        PageTransitions.nextPage(33, 1, 2);
+
+        switch (currentPage) {
+            case 1: {
+                PageTransitions.nextPage(33, 1, 2);
+                break;
+            }
+            case 7: {
+
+                var vid = document.getElementById("myVideo");
+
+
+                if (vid.paused) {
+                    vid.play();
+                } else {
+                    vid.pause();
+                }
+                
+                //vid.currentTime = 2;
+
+                //vid.play();
+
+
+                break;
+            }
+            default: break;
+        }
     });
 }
 

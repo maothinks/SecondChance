@@ -28,8 +28,11 @@ body {
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+
+    background-color:black;
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;

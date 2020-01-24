@@ -14,12 +14,11 @@ body {
     height: 100%;
     padding-left: 4%;
     padding-right: 0%;
-    padding-top: 70px;
+    padding-top: 140px;
 }
     
 #tinderslide {
     position: relative;
-    background: #fff;
     width: 95%;
     height: 100%;
 }
@@ -72,21 +71,13 @@ body {
 }
 
 /* Image rotation */
-#tinderslide li.pane1 {
+/*#tinderslide li.pane1 {
     -webkit-transform: rotate(-1deg);
     -moz-transform: rotate(-1deg);
     -o-transform: rotate(-1deg);
     -ms-transform: rotate(-1deg);
     transform: rotate(-1deg);
-}
-
-#tinderslide li.pane2 {
-    -webkit-transform: rotate(-1deg);
-    -moz-transform: rotate(-1deg);
-    -o-transform: rotate(-1deg);
-    -ms-transform: rotate(-1deg);
-    transform: rotate(-1deg);
-}
+}*/
 
 /* Like & dislike badge images */
 #tinderslide .like,
@@ -126,7 +117,8 @@ body {
         font-style: italic;
         color: rgb(63,34,195);
         font-size: small;
-        background: -webkit-linear-gradient(rgba(63,34,195,1), rgba(253,45,60,1));
+        /*background: -webkit-linear-gradient(rgba(63,34,195,1), rgba(253,45,60,1));*/
+        background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #074789, #093876, #082a63, #052353, #031c44, #031535, #020c27);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -183,16 +175,18 @@ body {
 }
 
 .footer {
-    height: 20px;
+    height: 10px;
     width: 100%;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
+    background-color:gray;
     bottom: 0;
     position: fixed;
     z-index: 100;
     text-align: center;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
+    /*border-top-left-radius: 100%;
+    border-top-right-radius: 100%;*/
 }
 
 .tab {
@@ -202,8 +196,9 @@ body {
 
 .btn-dislike {
     position: fixed;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #074789, #093876, #082a63, #052353, #031c44, #031535, #020c27);
     border: none;
     color: white;
     padding: 7px;
@@ -212,7 +207,7 @@ body {
     border-radius: 50%;
     bottom: 10px;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
-    left: 17%;
+    left: 5%;
     opacity: 0.9;
 }
 
@@ -239,8 +234,10 @@ body {
 
 .btn-like {
     position: fixed;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
+    background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #074789, #093876, #082a63, #052353, #031c44, #031535, #020c27);
     border: none;
     color: white;
     padding: 14px;
@@ -248,15 +245,18 @@ body {
     cursor: pointer;
     border-radius: 50%;
     bottom: 10px;
-    right: 18%;
+    /*right: 1%;*/
+    left:40%;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
     opacity: 0.9;
 }
 
 .btn-home {
     position: fixed;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
+    background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #074789, #093876, #082a63, #052353, #031c44, #031535, #020c27);
     border: none;
     color: white;
     padding: 14px;
@@ -264,7 +264,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     bottom: 10px;
-    right: 18%;
+    left: 40%;
     box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #FFF;
     opacity: 0.9;
 }
@@ -309,6 +309,57 @@ body {
 }
 
 /* jTinder images */
+
+#tinderslide .pane20 .img {
+    background: url("../img/pane/persons/img20.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane19 .img {
+    background: url("../img/pane/persons/img19.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane18 .img {
+    background: url("../img/pane/persons/img18.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane17 .img {
+    background: url("../img/pane/persons/img17.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane16 .img {
+    background: url("../img/pane/persons/img16.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane15 .img {
+    background: url("../img/pane/persons/img15.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane14 .img {
+    background: url("../img/pane/persons/img14.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane13 .img {
+    background: url("../img/pane/persons/img13.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane12 .img {
+    background: url("../img/pane/persons/img12.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane11 .img {
+    background: url("../img/pane/persons/img11.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
 #tinderslide .pane10 .img {
     background: url("../img/pane/persons/img10.jpeg") no-repeat scroll center center;
     background-size: cover;

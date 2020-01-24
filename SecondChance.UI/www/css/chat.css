@@ -73,13 +73,15 @@ body {
 
 .user-bar {
     height: 55px;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);
     color: #fff;
     padding: 0 8px;
     font-size: 24px;
     position: relative;
     z-index: 1;
+    top: 134px;
 }
 
     .user-bar:after {
@@ -149,7 +151,6 @@ body {
 .conversation {
     height: calc(100% - 12px);
     position: relative;
-    background: #efe7dd url("https://cloud.githubusercontent.com/assets/398893/15136779/4e765036-1639-11e6-9201-67e728e86f39.jpg") repeat;
     z-index: 0;
 }
 
@@ -279,14 +280,16 @@ body {
     }
 
 .message.sent {
-    background: #e1ffc7;
+    background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #00579d, #00579d, #00579d, #00579d, #00579d, #00579d, #020c27);
+    /*background: linear-gradient(303deg, rgba(237,171,178,1) 0%, rgba(219,213,233,1) 74%);*/
     border-radius: 5px 0px 5px 5px;
     float: right;
+    opacity: 0.8;
 }
 
     .message.sent:after {
         border-width: 0px 0 10px 10px;
-        border-color: transparent transparent transparent #e1ffc7;
+        border-color: transparent transparent transparent #020c27;
         top: 0;
         right: -10px;
     }
@@ -372,8 +375,10 @@ body {
     }
 
         .conversation-compose .send .circle {
-            background: rgb(239,87,104);
-            background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+            /*background: rgb(239,87,104);
+            background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+            /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
+            background-image: linear-gradient(to right top, #15c8ff, #00abe9, #008ed1, #0072b8, #00579d, #074789, #093876, #082a63, #052353, #031c44, #031535, #020c27);
             border-radius: 50%;
             color: #fff;
             position: relative;
@@ -425,9 +430,10 @@ body {
 
     .conversation {
         height: calc(100vh - 55px);
+        top:134px;
     }
 
         .conversation .conversation-container {
-            height: calc(100vh - 120px);
+            height: calc(100vh - 260px);
         }
 }

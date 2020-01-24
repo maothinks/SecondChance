@@ -50,38 +50,45 @@
 
 .top-maps {
     position: fixed;
-    top: 49px;  
+    top: 49px;
     right: 0;
     z-index: 999;
     width: 100%;
     height: 23px;
+    /*border-left: solid;
+    border-right: solid;*/
+    border-color: transparent;
 }
 
 .top-maps-statistics {
     position: fixed;
     top: 96px;
     z-index: 999;
-    width: 120px;
+    width: 100%;
     height: 23px;
     margin: 0 auto; /* Will not center vertically and won't work in IE6/7. */
     left: 0;
     right: 0;
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    opacity: 0.6;
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    /*border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;*/
+    opacity: 1;
+    /*border-left: solid;
+    border-right: solid;*/
+    border-color: transparent;
 }
 
 .top-maps-statistics_a {
-    background: rgb(239,87,104);
-    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);
+    /*background: rgb(239,87,104);
+    background: linear-gradient(303deg, rgba(239,87,104,1) 0%, rgba(150,118,235,1) 96%);*/
+    background-image: linear-gradient(to top, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);
+    /*background-image: linear-gradient(to right, #000103, #36383a, #6b6f72, #a5abaf, #e3ecf0);*/
     color: white;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
+    /*border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;*/
     font-weight: bolder;
 }
-
 
 #map {
     height: 100%;
@@ -98,8 +105,9 @@
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    background: rgb(237,171,178);
-    background: linear-gradient(303deg, rgba(237,171,178,1) 0%, rgba(219,213,233,1) 74%);
+    /*background: rgb(237,171,178);
+    background: linear-gradient(303deg, rgba(237,171,178,1) 0%, rgba(219,213,233,1) 74%);*/
+    background-color: #e3ecf0;
 }
 
 .main-card-tinder {
@@ -107,8 +115,6 @@
     height: 100%;
     margin-right: auto;
     margin-left: auto;
-    display: none;
     padding-bottom: 50px;
-    background: rgb(237,171,178);
-    background: linear-gradient(303deg, rgba(237,171,178,1) 0%, rgba(219,213,233,1) 74%);
+    background-color: white;
 }

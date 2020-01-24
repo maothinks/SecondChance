@@ -14,12 +14,10 @@
     <link href="css/jTinder.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/material-design-iconic-font.css" rel="stylesheet" />
-
     <link href="css/page-transitions/animations.css" rel="stylesheet" />
     <link href="css/page-transitions/component.css" rel="stylesheet" />
     <link href="css/page-transitions/default.css" rel="stylesheet" />
     <link href="css/page-transitions/multilevelmenu.css" rel="stylesheet" />
-
 
     <script src="js/page-transitions/modernizr.custom.js"></script>
 </head>
@@ -27,12 +25,12 @@
     <div class="border">
 
         <!--
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------ Nav Bar
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    -->
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Nav Bar
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
 
         <nav id="nav-top" class="navbar navbar-default navbar-fixed-top nav-top-color">
             <div class="container-fluid">
@@ -45,116 +43,65 @@
             </div>
             <!--/.container-fluid -->
         </nav>
+        <div id="controls">
+            <div class="btn-group-justified top-maps top-bar-dates">
+                <div class="btn btn-default" id="bactivities" value="action02" style="width:43%; background-color:transparent">
+                    <div class="input-group date-time" data-provide="datepicker">
+                        <select class="form-control" style="font-size:large; font-weight:bolder">
+                            <option value="d1">26/04/2018</option>
+                            <option value="d2">25/04/2018</option>
+                            <option value="d3">24/04/2018</option>
+                            <option value="d4">23/04/2018</option>
+                        </select>
+                    </div>
+                </div>
 
-        <!--
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------ Side Bar Menu
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    -->
-        <div id="wrapper">
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                        <a href="#">
-                            Second Chance
-                        </a>
-                    </li>
-                    <li>
-                        <a onclick="PageTransitions.nextPage(animation, currentPage, 6)">Profile</a>
-                    </li>
-                    <!--<li>
-                    <a onclick="PageTransitions.nextPage(animation, currentPage, 5)">Statistics</a>
-                </li>-->
-                    <li>
-                        <a href="index.html">Logout</a>
-                    </li>
-                </ul>
+                <div class="btn btn-default" id="bactivities" value="action02" style="width:43%;background-color:transparent">
+                    <div class="input-group date-time" data-provide="datepicker">
+                        <select id="selectTime" class="form-control" onchange="onTimeChanged(this)" style="font-size:large; font-weight:bolder">
+                            <option value="20">21:30</option>
+                            <option value="19">20:00</option>
+                            <option value="18">19:15</option>
+                            <option value="17">18:45</option>
+                            <option value="16">18:30</option>
+                            <option value="15">17:37</option>
+                            <option value="14">16:50</option>
+                            <option value="13">16:30</option>
+                            <option value="12">15:47</option>
+                            <option value="11">15:10</option>
+                            <option value="10">14:35</option>
+                            <option value="9">13:07</option>
+                            <option value="8">12:30</option>
+                            <option value="7">12:00</option>
+                            <option value="6">11:50</option>
+                            <option value="5">11:30</option>
+                            <option value="4">11:10</option>
+                            <option value="3">10:05</option>
+                            <option value="2">09:30</option>
+                            <option value="1">08:13</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <!--
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------ PAGES SECTION
-    ------------------------------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------------------------------
-    -->
+            <div class="top-border"></div>
 
-        <div id="pt-main" class="pt-perspective">
-
-            <!--
-        ------------------------------------------------------------------------------------------------------
-        ------------------------------------------------------------------------------------------------------
-        ------------------------------------------------------------------------------------------------------ Maps
-        ------------------------------------------------------------------------------------------------------
-        ------------------------------------------------------------------------------------------------------
-        -->
-
-            <div class="pt-page pt-page-1 second-chance-maps">
-
-
-                <div class="btn-group-justified top-maps top-bar-dates">
-                    
-                    <div class="btn btn-default" id="bactivities" value="action02" style="width:43%; background-color:transparent">
-                        <div class="input-group date-time" data-provide="datepicker">
-                            <!--<input type='text' class="form-control" value="26/04/2018" />-->
-                            <select class="form-control" style="font-size:large; font-weight:bolder">
-                                <option value="d1">26/04/2018</option>
-                                <option value="d2">25/04/2018</option>
-                                <option value="d3">24/04/2018</option>
-                                <option value="d4">23/04/2018</option>
-                            </select>
-                            <!--<div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
-                </div>-->
-                        </div>
-                    </div>
-
-                    <div class="btn btn-default" id="bactivities" value="action02" style="width:43%;background-color:transparent">
-                        <div class="input-group date-time" data-provide="datepicker">
-                            <!--<input type='text' class="form-control" value="08:30" />-->
-                            <select id="selectTime" class="form-control" onchange="onTimeChanged(this)" style="font-size:large; font-weight:bolder">
-                                <option value="20">21:30</option>
-                                <option value="19">20:00</option>
-                                <option value="18">19:15</option>
-                                <option value="17">18:45</option>
-                                <option value="16">18:30</option>
-                                <option value="15">17:37</option>
-                                <option value="14">16:50</option>
-                                <option value="13">16:30</option>
-                                <option value="12">15:47</option>
-                                <option value="11">15:10</option>
-                                <option value="10">14:35</option>
-                                <option value="9">13:07</option>
-                                <option value="8">12:30</option>
-                                <option value="7">12:00</option>
-                                <option value="6">11:50</option>
-                                <option value="5">11:30</option>
-                                <option value="4">11:10</option>
-                                <option value="3">10:05</option>
-                                <option value="2">09:30</option>
-                                <option value="1">08:13</option>
-                            </select>
-                            <!--<div class="input-group-addon">
-                    <span class="glyphicon glyphicon-th"></span>
-                </div>-->
-                        </div>
-                    </div>
+            <div class="btn-group btn-group-justified top-maps-statistics">
+                <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 1)">
+                    <b>Map</b>
                 </div>
-
-                <div class="btn-group btn-group-justified top-maps-statistics">
-                    <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
-                        <b>Statistics</b>
-                    </div>
+                <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 8)">
+                    <b>Chats</b>
                 </div>
-
-                <div style="height:100%;padding-bottom:0;padding-top:45px;">
-                    <div id="map"></div>
+                <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 7)">
+                    <b>Video</b>
                 </div>
+                <div href="#" class="btn btn-default top-maps-statistics_a" id="bactivities" value="action02" onclick="PageTransitions.nextPage(animation, currentPage, 5)">
+                    <b>Statistics</b>
+                </div>
+            </div>
 
+            <div class="footer">
                 <div id="second-chance-ring" class="second-chance-ring" style="display:none">
                     <div id="rotate-container">
                         <div id="rotatable">
@@ -166,10 +113,62 @@
                         <!--<div id="output"></div>-->
                     </div>
                 </div>
+            </div>
 
+        </div>
+
+            <!--
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------ Side Bar Menu
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------
+    -->
+            <div id="wrapper">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <li class="sidebar-brand">
+                            <a></a>
+                        </li>
+                        <li>
+                            <a onclick="PageTransitions.nextPage(animation, currentPage, 6)">Profile</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Logout</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <!--
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------ PAGES SECTION
+    ------------------------------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------------------------------
+    -->
+
+            <div id="pt-main" class="pt-perspective">
+
+                <!--
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Maps
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
+
+                <div class="pt-page pt-page-1 second-chance-maps">
+                    <div style="height:100%;padding-bottom:0;padding-top:45px;">
+                        <div id="map"></div>
+                    </div>
+
+
+
+                </div>
+
+                <!--
         ------------------------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------------------------ Cards
@@ -177,148 +176,55 @@
         ------------------------------------------------------------------------------------------------------
         -->
 
-            <div class="pt-page pt-page-2 second-chance-cards">
-                <!--<div class="btn-group btn-group-justified top">
-                    <a onclick="PageTransitions.nextPage(32, 2, 1)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        <img style="padding:5px" src="img/back.png" />
-                    </a>
+                <div class="pt-page pt-page-2 second-chance-cards">
+                    <div id="cards" class="main-card-tinder">
+                        <div id="cardContainer" class="wrap">
 
-                    <a onclick="PageTransitions.nextPage(animation, 2, 2)" class="btn btn-default active" id="bactivities" value="action02" style="width:45%">
-                        Search
-                    </a>
-
-                    <a onclick="PageTransitions.nextPage(animation, 2, 3)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        Contacts
-                    </a>
-                </div>-->
-
-                <!--<div onclick="PageTransitions.nextPage(32, 2, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img style="padding:5px" src="img/back.png" />
-            </div>-->
-
-                <div id="cards" class="main-card-tinder">
-                    <div class="wrap">
-                        <!-- start jtinder container -->
-                        <div id="tinderslide">
-                            <ul>
-                                <!--<li class="pane1">
-                                    <div class="name"><h1><b>MAURICIO</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>-->
-
-
-                                <li class="pane10">
-                                    <div class="card-name"><h1><b>MARIA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                    <!--<div class="chat"><a id="img-3"  class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
-                                </li>
-                                <li class="pane4">
-                                    <div class="card-name"><h1><b>VICTORIA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                    <!--<div class="chat"><a id="img-4" class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
-                                </li>
-                                <li class="pane5">
-                                    <div class="card-name"><h1><b>SUSANA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                    <!--<div class="chat"><a id="img-5" class="single-chat" onclick="singleChat(this)"><img src="img/single-chat.png" /></a></div>-->
-                                </li>
-
-                                <li class="pane9">
-                                    <div class="card-name"><h1><b>SARA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>
-                                <li class="pane8">
-                                    <div class="card-name"><h1><b>KELLY</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>
-                                <!--<li class="pane6">
-                                    <div class="name"><h1><b>ROSY</b>f </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>-->
-                                                            <!--<li class="pane7">
-                                    <div class="name"><h1><b>JOANNA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>-->
-                                                            <!--<li class="pane9">
-                                    <div class="name"><h1><b>LAURA</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>-->
-                                                            <!--<li class="pane10">
-                                    <div class="name"><h1><b>RACHAEL</b> </h1></div>
-                                    <div class="img"></div>
-                                    <div class="like"></div>
-                                    <div class="dislike"></div>
-                                </li>-->
-                            </ul>
                         </div>
-                        <!-- end jtinder container -->
-                    </div>
-                    <!-- end padding container -->
-                    <!-- jTinder trigger by buttons  -->
+                        <!-- end padding container -->
+                        <!-- jTinder trigger by buttons  -->
 
-                    <div class="footer">
-                        <a class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
-                        <a class="btn-like"><img src="img/chat-card.png" /></a>
-                    </div>
+                        <div class="footer">
+                            <!--<a class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>-->
+                            <a class="btn-like"><img src="img/chat-card.png" /></a>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
 
-            <!--
+                <!--
         ------------------------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------------------------ Contacts
         ------------------------------------------------------------------------------------------------------
         ------------------------------------------------------------------------------------------------------
         -->
-            <div class="pt-page pt-page-3 second-chance-contacts">
-                <div class="btn-group btn-group-justified top">
-                    <a onclick="PageTransitions.nextPage(animation, 3, lastPage)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        <img style="padding:5px" src="img/back.png" />
-                    </a>
+                <div class="pt-page pt-page-3 second-chance-contacts">
+                    <div class="btn-group btn-group-justified top">
+                        <a onclick="PageTransitions.nextPage(animation, 3, lastPage)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
+                            <img style="padding:5px" src="img/back.png" />
+                        </a>
 
-                    <a onclick="PageTransitions.nextPage(animation, 3, 2)" class="btn btn-default" id="bactivities" value="action02" style="width:45%">
-                        Search
-                    </a>
+                        <a onclick="PageTransitions.nextPage(animation, 3, 2)" class="btn btn-default" id="bactivities" value="action02" style="width:45%">
+                            Search
+                        </a>
 
-                    <a onclick="PageTransitions.nextPage(animation, 3, 3)" class="btn btn-default active" id="bBottle" value="action03" style="width:45%">
-                        Contacts
-                    </a>
+                        <a onclick="PageTransitions.nextPage(animation, 3, 3)" class="btn btn-default active" id="bBottle" value="action03" style="width:45%">
+                            Contacts
+                        </a>
+                    </div>
                 </div>
 
-                <!--<div onclick="PageTransitions.nextPage(2, 3, lastPage)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                <img style="padding:5px" src="img/back.png" />
-            </div>-->
-            </div>
-
-            <!--
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------ Chat
+                <!--
         ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            -->
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Chat
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
 
-            <div class="pt-page pt-page-4 second-chance-chat">
-                <!--<div class="btn-group btn-group-justified top" style="padding-left:60px">
+                <div class="pt-page pt-page-4 second-chance-chat">
+                    <!--<div class="btn-group btn-group-justified top" style="padding-left:60px">
 
                 <a class="btn btn-default active" id="bactivities" value="action02" style="width:45%">
                     Info
@@ -333,72 +239,73 @@
                 <img style="padding:3px" src="img/back.png" />
             </div>-->
 
-                <div id="chat" style="width:100%; height:100%; margin-right: auto; margin-left: auto">
-                    <div style="margin-right: auto; margin-left: auto;" class="text-center">
-                        <link href="css/chat.css" rel="stylesheet" />
+                    <div id="chat" style="width:100%; height:100%; margin-right: auto; margin-left: auto">
+                        <div style="margin-right: auto; margin-left: auto;" class="text-center">
+                            <link href="css/chat.css" rel="stylesheet" />
 
-                        <div class="screen">
-                            <div class="screen-container">
-                                <div class="chat">
-                                    <div class="chat-container">
-                                        <div class="user-bar">
-                                            <div class="back" onclick="PageTransitions.nextPage(2, 4, lastPage)">
-                                                <i class="zmdi zmdi-arrow-left"></i>
-                                            </div>
-                                            <div class="avatar">
-                                                <img src="img/pane/persons/img2.jpeg" alt="Avatar">
-                                            </div>
-                                            <div class="name">
-                                                <span>Sara</span>
-                                                <span class="status">online</span>
-                                            </div>
-                                            <div class="actions-chat more">
-                                                <i class="zmdi zmdi-more-vert"></i>
-                                            </div>
-                                            <div class="actions-chat attachment">
-                                                <i class="zmdi zmdi-attachment-alt"></i>
-                                            </div>
-                                            <div class="actions-chat">
-                                                <i class="zmdi zmdi-phone"></i>
-                                            </div>
-                                        </div>
-                                        <div class="conversation">
-                                            <div class="conversation-container">
-                                                <div class="message sent">
-                                                    Hi Sara what do you think about Second Chance?
-                                                    <span class="metadata">
-                                                        <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7" /></svg></span>
-                                                    </span>
+                            <div class="screen">
+                                <div class="screen-container">
+                                    <div class="chat">
+                                        <div class="chat-container">
+                                            <div class="user-bar">
+                                                <div class="back" onclick="PageTransitions.nextPage(2, 4, lastPage)">
+                                                    <i class="zmdi zmdi-arrow-left"></i>
                                                 </div>
-                                                <div class="message received">
-                                                    Hi Zohar, this is amazing!!!.
-                                                    <span class="metadata"><span class="time"></span></span>
+                                                <div class="avatar">
+                                                    <img src="img/pane/persons/img9.jpeg" alt="Avatar">
                                                 </div>
-                                                <div class="message sent">
-                                                    Thanks Sara, you are amazing too!! :P
-                                                    <span class="metadata">
-                                                        <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7" /></svg></span>
-                                                    </span>
+                                                <div class="name">
+                                                    <span>Luisa</span>
+                                                    <span class="status">online</span>
                                                 </div>
-                                                <div class="message received">
-                                                    Haha Thanks Zohar ;)
-                                                    <span class="metadata"><span class="time"></span></span>
+                                                <div class="actions-chat more">
+                                                    <i class="zmdi zmdi-more-vert"></i>
+                                                </div>
+                                                <div class="actions-chat attachment">
+                                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                                </div>
+                                                <div class="actions-chat">
+                                                    <i class="zmdi zmdi-phone"></i>
                                                 </div>
                                             </div>
-                                            <form class="conversation-compose">
-                                                <div class="emoji">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="smiley" x="3147" y="3209"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z" fill="#7d8489" /></svg>
-                                                </div>
-                                                <input class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
-                                                <div class="photo">
-                                                    <i class="zmdi zmdi-camera"></i>
-                                                </div>
-                                                <button class="send">
-                                                    <div class="circle">
-                                                        <i class="zmdi zmdi-mail-send"></i>
+                                            <div class="conversation">
+                                                <div class="conversation-container">
+                                                    <div class="message sent">
+                                                        Hi Luisa what do you think about Second Chance?
+                                                        <span class="metadata">
+                                                            <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#fff" /></svg></span>
+                                                        </span>
                                                     </div>
-                                                </button>
-                                            </form>
+                                                    <div class="message received">
+                                                        Hi Zohar, this is amazing!!!.
+                                                        <span class="metadata"><span class="time"></span></span>
+                                                    </div>
+                                                    <div class="message sent">
+                                                        Thanks Luisa, you are amazing too!! :P
+                                                        <span class="metadata">
+                                                            <span class="time"></span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#fff" /></svg></span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="message received">
+                                                        Haha Thanks Zohar
+                                                        <span class="metadata"><span class="time"></span></span>
+                                                    </div>
+                                                </div>
+                                                <form class="conversation-compose">
+                                                    <div class="emoji">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" id="smiley" x="3147" y="3209"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.153 11.603c.795 0 1.44-.88 1.44-1.962s-.645-1.96-1.44-1.96c-.795 0-1.44.88-1.44 1.96s.645 1.965 1.44 1.965zM5.95 12.965c-.027-.307-.132 5.218 6.062 5.55 6.066-.25 6.066-5.55 6.066-5.55-6.078 1.416-12.13 0-12.13 0zm11.362 1.108s-.67 1.96-5.05 1.96c-3.506 0-5.39-1.165-5.608-1.96 0 0 5.912 1.055 10.658 0zM11.804 1.01C5.61 1.01.978 6.034.978 12.23s4.826 10.76 11.02 10.76S23.02 18.424 23.02 12.23c0-6.197-5.02-11.22-11.216-11.22zM12 21.355c-5.273 0-9.38-3.886-9.38-9.16 0-5.272 3.94-9.547 9.214-9.547a9.548 9.548 0 0 1 9.548 9.548c0 5.272-4.11 9.16-9.382 9.16zm3.108-9.75c.795 0 1.44-.88 1.44-1.963s-.645-1.96-1.44-1.96c-.795 0-1.44.878-1.44 1.96s.645 1.963 1.44 1.963z" fill="#7d8489" /></svg>
+                                                    </div>
+                                                    <input class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+                                                    <div class="photo">
+                                                        <i class="zmdi zmdi-camera"></i>
+                                                    </div>
+                                                    <button class="send">
+                                                        <div class="circle">
+                                                            <i class="zmdi zmdi-mail-send"></i>
+                                                        </div>
+                                                    </button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -406,120 +313,453 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------ Statistics
+                <!--
         ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            -->
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Statistics
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
 
-            <div class="pt-page pt-page-4 second-chance-statistics">
-                <!--<div class="btn-group btn-group-justified top">
-                    <a onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        <img style="padding:5px" src="img/back.png" />
-                    </a>
-
-                    <a class="btn btn-default active" id="bactivities" value="action02" style="width:45%">
-                        Pie
-                    </a>
-
-                    <a class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        Others
-                    </a>
-                </div>-->
-                <!--<div onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                    <img style="padding:5px" src="img/back.png" />
-                </div>-->
-
-                <div id="statistics" class="main-card">
-                    <div style="height:80px">
-
+                <div class="pt-page pt-page-4 second-chance-statistics">
+                    <div id="statistics" class="main-card">
+                        <div style="height:300px">
+                        </div>
+                        <div style="margin-right: auto; margin-left: auto;" class="text-center">
+                            <img style="width:300px" src="img/pane/Chart.png" />
+                        </div>
                     </div>
-                    <div style="margin-right: auto; margin-left: auto;" class="text-center">
-                        <b style="color:gray;font-size:xx-large">Statistics</b>
-                        <br />
-                        <br />
-                        <img style="width:300px" src="img/pane/Chart.png" />
-                    </div>
+
+                    <!--<div class="footer">
+                <a onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
+                <a onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-home"><img src="img/home.png" /></a>
+            </div>-->
                 </div>
 
-                <div class="footer">
-                    <a onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
-                    <a onclick="PageTransitions.nextPage(animation, 5, 1)" class="btn-home"><img src="img/home.png" /></a>
-                </div>
-            </div>
-
-            <!--
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------ Profile
+                <!--
         ------------------------------------------------------------------------------------------------------
-            ------------------------------------------------------------------------------------------------------
-            -->
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Profile
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
 
-            <div class="pt-page pt-page-6 second-chance-profile">
-                <!--<div class="btn-group btn-group-justified top">
-                    <a onclick="PageTransitions.nextPage(animation, 6, 1)" class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        <img style="padding:5px" src="img/back.png" />
-                    </a>
+                <div class="pt-page pt-page-6 second-chance-profile">
+                    <div id="profile" class="main-card">
+                        <div class="container" style="height:100%">
+                            <div class="row">
+                                <div style="height:85px">
 
-                    <a class="btn btn-default active" id="bactivities" value="action02" style="width:45%">
-                        About
-                    </a>
-
-                    <a class="btn btn-default" id="bBottle" value="action03" style="width:45%">
-                        Settings
-                    </a>
-                </div>-->
-
-                <!--<div onclick="PageTransitions.nextPage(animation, 6, 1)" class="btn-group btn-group-justified top-back" style="padding-left:10px">
-                    <img style="padding:5px" src="img/back.png" />
-                </div>-->
-
-                <div id="profile" class="main-card">
-                    <div class="container" style="height:100%">
-                        <div class="row">
-                            <div style="height:85px">
-
-                            </div>
-                            <div class="span3" style="color:black">
-                                <center>
-                                    <br />
-                                    <br />
-                                    <a href="#" data-toggle="modal"><img src="img/pane/persons/img1.jpeg" name="aboutme" width="140" height="140" class="img-circle"></a>
-                                    <br />
-                                    <h3><b>Mauricio Zapata </b></h3>
-                                    <p>Software developer</p>
-                                    <p>Medellin, Colombia.<br></p>
-                                </center>
-
+                                </div>
+                                <div class="span3" style="color:black">
+                                    <center>
+                                        <br />
+                                        <br />
+                                        <a href="#" data-toggle="modal"><img src="img/pane/persons/developer.jpeg" name="aboutme" width="140" height="140" class="img-circle"></a>
+                                        <br />
+                                        <h3><b>Mauricio Zapata </b></h3>
+                                        <p>Software developer</p>
+                                        <p>Medellin, Colombia.<br></p>
+                                    </center>
+                                </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="footer">
+                        <!--<a onclick="PageTransitions.nextPage(animation, 6, 1)" class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>-->
+                        <a onclick="PageTransitions.nextPage(animation, 6, 1)" class="btn-home"><img src="img/home.png" /></a>
+                    </div>
                 </div>
 
-                <div class="footer">
-                    <a onclick="PageTransitions.nextPage(animation, 6, 1)"  class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
-                    <a onclick="PageTransitions.nextPage(animation, 6, 1)"  class="btn-home"><img src="img/home.png" /></a>
+                <!--
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Video
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
+
+                <div class="pt-page pt-page-7 second-chance-video">
+                    <div id="profile" class="main-card">
+
+                        <!--<video style="width:100%;height:80%;" id="video" src="http://upload.wikimedia.org/wikipedia/commons/7/79/Big_Buck_Bunny_small.ogv" controls="controls"></video>-->
+                        <div style="height:50px"></div>
+
+                        <video id='myVideo' style="width:100%;height:90%;" poster='http://res.cloudinary.com/david-wash-blog/video/upload/sample-video.jpg'>
+                            <source src='http://clips.vorwaerts-gmbh.de/VfE.webm' type='video/webm'>
+                            <source src='http://clips.vorwaerts-gmbh.de/VfE_html5.mp4' type='video/mp4'>
+                            <source src='http://clips.vorwaerts-gmbh.de/VfE.ogv' type='video/ogg'>
+                        </video>
+
+                        <!--<video id='myVideo' style="width:100%;height:90%;" poster="http://media.w3.org/2010/05/sintel/poster.png">
+                            <source id='mp4' src="http://media.w3.org/2010/05/sintel/trailer.mp4" type='video/mp4' />
+                            <source id='webm' src="http://media.w3.org/2010/05/sintel/trailer.webm" type='video/webm' />
+                            <source id='ogv' src="http://media.w3.org/2010/05/sintel/trailer.ogv" type='video/ogg' />
+           
+                            <track kind="subtitles" label="English subtitles" src="subtitles_en.vtt" srclang="en" default />
+                            <track kind="subtitles" label="Deutsche Untertitel" src="subtitles_de.vtt" srclang="de" />
+                            <p>Your user agent does not support the HTML5 Video element.</p>
+                        </video>-->
+                    </div>
+
+                    <!--<div class="footer">
+                <a onclick="PageTransitions.nextPage(animation, 7, 1)" class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
+                <a onclick="PageTransitions.nextPage(animation, 7, 1)" class="btn-home"><img src="img/home.png" /></a>
+            </div>-->
                 </div>
+
+                <!--
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------ Chats
+        ------------------------------------------------------------------------------------------------------
+        ------------------------------------------------------------------------------------------------------
+        -->
+
+                <div class="pt-page pt-page-8 second-chance-chats">
+                    <div id="profile" class="main-card">
+
+                        <style>
+                            .container {
+                                max-width: 1170px;
+                                margin: auto;
+                            }
+
+                            .img-chat {
+                                max-width: 100%;
+                            }
+
+                            .inbox_people {
+                                background: #f8f8f8 none repeat scroll 0 0;
+                                float: left;
+                                overflow: hidden;
+                                width: 40%;
+                                border-right: 1px solid #c4c4c4;
+                            }
+
+                            .inbox_msg {
+                                border: 1px solid #c4c4c4;
+                                clear: both;
+                                overflow: hidden;
+                            }
+
+                            .top_spac {
+                                margin: 20px 0 0;
+                            }
+
+
+                            .recent_heading {
+                                float: left;
+                                width: 40%;
+                            }
+
+                            .srch_bar {
+                                display: inline-block;
+                                text-align: right;
+                                width: 60%;
+                            }
+
+                            .headind_srch {
+                                padding: 10px 29px 10px 20px;
+                                overflow: hidden;
+                                border-bottom: 1px solid #c4c4c4;
+                            }
+
+                            .recent_heading h4 {
+                                color: #05728f;
+                                font-size: 21px;
+                                margin: auto;
+                            }
+
+                            .srch_bar input {
+                                border: 1px solid #cdcdcd;
+                                border-width: 0 0 1px 0;
+                                width: 80%;
+                                padding: 2px 0 4px 6px;
+                                background: none;
+                            }
+
+                            .srch_bar .input-group-addon button {
+                                background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                                border: medium none;
+                                padding: 0;
+                                color: #707070;
+                                font-size: 18px;
+                            }
+
+                            .srch_bar .input-group-addon {
+                                margin: 0 0 0 -27px;
+                            }
+
+                            .chat_ib h5 {
+                                font-size: 15px;
+                                color: #464646;
+                                margin: 0 0 8px 0;
+                            }
+
+                                .chat_ib h5 span {
+                                    font-size: 13px;
+                                    float: right;
+                                }
+
+                            .chat_ib p {
+                                font-size: 14px;
+                                color: #989898;
+                                margin: auto
+                            }
+
+                            .chat_img {
+                                float: left;
+                                width: 11%;
+                            }
+
+                            .chat_ib {
+                                float: left;
+                                padding: 0 0 0 15px;
+                                width: 88%;
+                            }
+
+                            .chat_people {
+                                overflow: hidden;
+                                clear: both;
+                            }
+
+                            .chat_list {
+                                border-bottom: 1px solid #c4c4c4;
+                                margin: 0;
+                                padding: 18px 16px 10px;
+                            }
+
+                            .inbox_chat {
+                                height: 550px;
+                                overflow-y: scroll;
+                            }
+
+                            .active_chat {
+                                background: #ebebeb;
+                            }
+
+                            .incoming_msg_img {
+                                display: inline-block;
+                                width: 6%;
+                            }
+
+                            .received_msg {
+                                display: inline-block;
+                                padding: 0 0 0 10px;
+                                vertical-align: top;
+                                width: 92%;
+                            }
+
+                            .received_withd_msg p {
+                                background: #ebebeb none repeat scroll 0 0;
+                                border-radius: 3px;
+                                color: #646464;
+                                font-size: 14px;
+                                margin: 0;
+                                padding: 5px 10px 5px 12px;
+                                width: 100%;
+                            }
+
+                            .time_date {
+                                color: #747474;
+                                display: block;
+                                font-size: 12px;
+                                margin: 8px 0 0;
+                            }
+
+                            .received_withd_msg {
+                                width: 57%;
+                            }
+
+                            .mesgs {
+                                float: left;
+                                padding: 30px 15px 0 25px;
+                                width: 60%;
+                            }
+
+                            .sent_msg p {
+                                background: #05728f none repeat scroll 0 0;
+                                border-radius: 3px;
+                                font-size: 14px;
+                                margin: 0;
+                                color: #fff;
+                                padding: 5px 10px 5px 12px;
+                                width: 100%;
+                            }
+
+                            .outgoing_msg {
+                                overflow: hidden;
+                                margin: 26px 0 26px;
+                            }
+
+                            .sent_msg {
+                                float: right;
+                                width: 46%;
+                            }
+
+                            .input_msg_write input {
+                                background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+                                border: medium none;
+                                color: #4c4c4c;
+                                font-size: 15px;
+                                min-height: 48px;
+                                width: 100%;
+                            }
+
+                            .type_msg {
+                                border-top: 1px solid #c4c4c4;
+                                position: relative;
+                            }
+
+                            .msg_send_btn {
+                                background: #05728f none repeat scroll 0 0;
+                                border: medium none;
+                                border-radius: 50%;
+                                color: #fff;
+                                cursor: pointer;
+                                font-size: 17px;
+                                height: 33px;
+                                position: absolute;
+                                right: 0;
+                                top: 11px;
+                                width: 33px;
+                            }
+
+                            .messaging {
+                                padding: 0 0 50px 0;
+                            }
+
+                            .msg_history {
+                                height: 516px;
+                                overflow-y: auto;
+                            }
+                        </style>
+
+                        <div style="height:150px"></div>
+
+                        <div class="inbox_chat">
+                            <div class="chat_list active_chat">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img1.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Susana <span class="chat_date">Jan 22</span></h5>
+                                        <p>
+                                            Hi, welcome to California!!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img2.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Maria <span class="chat_date">Jan 19</span></h5>
+                                        <p>
+                                            Nice to meet you too!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img3.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Patricia <span class="chat_date">Jan 18</span></h5>
+                                        <p>
+                                            And you?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img4.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Gloria <span class="chat_date">Dec 25</span></h5>
+                                        <p>
+                                            haha yeah!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img5.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Alejandra <span class="chat_date">Dec 17</span></h5>
+                                        <p>
+                                            In the university, and like play tennis
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img6.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Estefania <span class="chat_date">Dec 12</span></h5>
+                                        <p>
+                                            it's a joke hahahaha!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img7.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Cristina <span class="chat_date">Dec 10</span></h5>
+                                        <p>
+                                            with my brother...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img8.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Juliana <span class="chat_date">Dec 07</span></h5>
+                                        <p>
+                                            ;)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat_list">
+                                <div class="chat_people">
+                                    <div class="chat_img"> <img class="img-chat" src="img/pane/persons/img9.jpeg" alt="sunil"> </div>
+                                    <div class="chat_ib">
+                                        <h5>Luisa <span class="chat_date">Dec 06</span></h5>
+                                        <p>
+                                            off course!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="footer">
+                <a onclick="PageTransitions.nextPage(animation, 8, 1)" class="btn-dislike"><img style="padding:5px;;height:60px" src="img/back.png" /></a>
+                <a onclick="PageTransitions.nextPage(animation, 8, 1)" class="btn-home"><img src="img/home.png" /></a>
+            </div>-->
+                </div>
+
+                <!--<div class="pt-page pt-page-3" > <h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div >
+        <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+        <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
+        <div class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>-->
             </div>
 
+            <div class="pt-message">
+                <p>Your browser does not support CSS animations.</p>
+            </div>
 
-            <!--<div class="pt-page pt-page-3" > <h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div >
-            <div class="pt-page pt-page-4"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
-            <div class="pt-page pt-page-5"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>
-            <div class="pt-page pt-page-6"><h1><span>A collection of</span><strong>Page</strong> Transitions</h1></div>-->
-        </div>
-
-        <div class="pt-message">
-            <p>Your browser does not support CSS animations.</p>
-        </div>
-
-        <!--
+            <!--
     ------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------
     ------------------------------------------------------------------------------------------------------ Scripts
@@ -527,81 +767,82 @@
     ------------------------------------------------------------------------------------------------------
     -->
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/page-transitions/jquery.dlmenu.js"></script>
-        <script src="js/page-transitions/pagetransitions.js"></script>
-        <script src="js/zingtouch.min.js"></script>
+            <script src="js/jquery.min.js"></script>
+            <script src="js/page-transitions/jquery.dlmenu.js"></script>
+            <script src="js/page-transitions/pagetransitions.js"></script>
+            <script src="js/zingtouch.min.js"></script>
 
-        <script type="text/javascript" src="js/jquery.transform2d.js"></script>
-        <script type="text/javascript" src="js/jquery.jTinder.js"></script>
+            <script type="text/javascript" src="js/jquery.transform2d.js"></script>
+            <script type="text/javascript" src="js/jquery.jTinder.js"></script>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/app/main.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/app/main.js"></script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJkU33HB-6BJRcaeDii2YHIInzCA-LVys"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJkU33HB-6BJRcaeDii2YHIInzCA-LVys"></script>
 
-        <script src="js/app/map.js"></script>
-        <script src="js/app/cards.js"></script>
+            <script src="js/app/map.js"></script>
+            <script src="js/app/cards.js"></script>
 
-        <script>
-            $(".messages").animate({ scrollTop: $(document).height() }, "fast");
+            <script>
+                $(".messages").animate({ scrollTop: $(document).height() }, "fast");
 
-            $("#profile-img").click(function () {
-                $("#status-options").toggleClass("active");
-            });
+                $("#profile-img").click(function () {
+                    $("#status-options").toggleClass("active");
+                });
 
-            $(".expand-button").click(function () {
-                $("#profile").toggleClass("expanded");
-                $("#contacts").toggleClass("expanded");
-            });
+                $(".expand-button").click(function () {
+                    $("#profile").toggleClass("expanded");
+                    $("#contacts").toggleClass("expanded");
+                });
 
-            $("#status-options ul li").click(function () {
-                $("#profile-img").removeClass();
-                $("#status-online").removeClass("active");
-                $("#status-away").removeClass("active");
-                $("#status-busy").removeClass("active");
-                $("#status-offline").removeClass("active");
-                $(this).addClass("active");
-
-                if ($("#status-online").hasClass("active")) {
-                    $("#profile-img").addClass("online");
-                } else if ($("#status-away").hasClass("active")) {
-                    $("#profile-img").addClass("away");
-                } else if ($("#status-busy").hasClass("active")) {
-                    $("#profile-img").addClass("busy");
-                } else if ($("#status-offline").hasClass("active")) {
-                    $("#profile-img").addClass("offline");
-                } else {
+                $("#status-options ul li").click(function () {
                     $("#profile-img").removeClass();
+                    $("#status-online").removeClass("active");
+                    $("#status-away").removeClass("active");
+                    $("#status-busy").removeClass("active");
+                    $("#status-offline").removeClass("active");
+                    $(this).addClass("active");
+
+                    if ($("#status-online").hasClass("active")) {
+                        $("#profile-img").addClass("online");
+                    } else if ($("#status-away").hasClass("active")) {
+                        $("#profile-img").addClass("away");
+                    } else if ($("#status-busy").hasClass("active")) {
+                        $("#profile-img").addClass("busy");
+                    } else if ($("#status-offline").hasClass("active")) {
+                        $("#profile-img").addClass("offline");
+                    } else {
+                        $("#profile-img").removeClass();
+                    };
+
+                    $("#status-options").removeClass("active");
+                });
+
+                function newMessage() {
+                    message = $(".message-input input").val();
+                    if ($.trim(message) == '') {
+                        return false;
+                    }
+                    $('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
+                    $('.message-input input').val(null);
+                    $('.contact.active .preview').html('<span>You: </span>' + message);
+                    $(".messages").animate({ scrollTop: $(document).height() }, "fast");
                 };
 
-                $("#status-options").removeClass("active");
-            });
-
-            function newMessage() {
-                message = $(".message-input input").val();
-                if ($.trim(message) == '') {
-                    return false;
-                }
-                $('<li class="sent"><img src="http://emilcarlsson.se/assets/mikeross.png" alt="" /><p>' + message + '</p></li>').appendTo($('.messages ul'));
-                $('.message-input input').val(null);
-                $('.contact.active .preview').html('<span>You: </span>' + message);
-                $(".messages").animate({ scrollTop: $(document).height() }, "fast");
-            };
-
-            $('.submit').click(function () {
-                newMessage();
-            });
-
-            $(window).on('keydown', function (e) {
-                if (e.which == 13) {
+                $('.submit').click(function () {
                     newMessage();
-                    return false;
-                }
-            });
+                });
 
-                                                            //# sourceURL=pen.js
-        </script>
+                $(window).on('keydown', function (e) {
+                    if (e.which == 13) {
+                        newMessage();
+                        return false;
+                    }
+                });
+
+                        //# sourceURL=pen.js
+            </script>
+        </div>
     </div>
 </body>
 </html>
