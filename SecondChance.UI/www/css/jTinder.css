@@ -14,7 +14,8 @@ body {
     height: 100%;
     padding-left: 4%;
     padding-right: 0%;
-    padding-top: 140px;
+    padding-top: 170px;
+    background-color:gray;
 }
     
 #tinderslide {
@@ -251,6 +252,21 @@ body {
     opacity: 0.9;
 }
 
+.btn-open-panel {
+    position: fixed;
+    background-color: navajowhite;
+    padding: 14px;
+    text-align: center;
+    cursor: pointer;
+    top: 50%;
+    right: 0;
+    opacity: 0.6;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    height:60px;
+    width:60px;
+}
+
 .btn-home {
     position: fixed;
     /*background: rgb(239,87,104);
@@ -309,6 +325,40 @@ body {
 }
 
 /* jTinder images */
+#tinderslide .pane28 .img {
+    background: url("../img/pane/persons/img28.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane27 .img {
+    background: url("../img/pane/persons/img27.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane26 .img {
+    background: url("../img/pane/persons/img26.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+#tinderslide .pane25 .img {
+    background: url("../img/pane/persons/img25.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+#tinderslide .pane24 .img {
+    background: url("../img/pane/persons/img24.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+#tinderslide .pane23 .img {
+    background: url("../img/pane/persons/img23.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+#tinderslide .pane22 .img {
+    background: url("../img/pane/persons/img22.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+#tinderslide .pane21 .img {
+    background: url("../img/pane/persons/img21.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
 
 #tinderslide .pane20 .img {
     background: url("../img/pane/persons/img20.jpeg") no-repeat scroll center center;
@@ -398,6 +448,148 @@ body {
 }
 #tinderslide .pane1 .img {
     background: url("../img/pane/persons/img1.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+/*Bicycles*/
+
+#tinderslide .pane-product28 .img {
+    background: url("../img/pane/bicycles/img28.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product27 .img {
+    background: url("../img/pane/bicycles/img27.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product26 .img {
+    background: url("../img/pane/bicycles/img26.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product25 .img {
+    background: url("../img/pane/bicycles/img25.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product24 .img {
+    background: url("../img/pane/bicycles/img24.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product23 .img {
+    background: url("../img/pane/bicycles/img23.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product22 .img {
+    background: url("../img/pane/bicycles/img22.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product21 .img {
+    background: url("../img/pane/bicycles/img21.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product20 .img {
+    background: url("../img/pane/bicycles/img20.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product19 .img {
+    background: url("../img/pane/bicycles/img19.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product18 .img {
+    background: url("../img/pane/bicycles/img18.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product17 .img {
+    background: url("../img/pane/bicycles/img17.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product16 .img {
+    background: url("../img/pane/bicycles/img16.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product15 .img {
+    background: url("../img/pane/bicycles/img15.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product14 .img {
+    background: url("../img/pane/bicycles/img14.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product13 .img {
+    background: url("../img/pane/bicycles/img13.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product12 .img {
+    background: url("../img/pane/bicycles/img12.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product11 .img {
+    background: url("../img/pane/bicycles/img11.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product10 .img {
+    background: url("../img/pane/bicycles/img10.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product9 .img {
+    background: url("../img/pane/bicycles/img9.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product8 .img {
+    background: url("../img/pane/bicycles/img8.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product7 .img {
+    background: url("../img/pane/bicycles/img7.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product6 .img {
+    background: url("../img/pane/bicycles/img6.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product5 .img {
+    background: url("../img/pane/bicycles/img5.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product4 .img {
+    background: url("../img/pane/bicycles/img4.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product3 .img {
+    background: url("../img/pane/bicycles/img3.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product2 .img {
+    background: url("../img/pane/bicycles/img2.jpeg") no-repeat scroll center center;
+    background-size: cover;
+}
+
+#tinderslide .pane-product1 .img {
+    background: url("../img/pane/bicycles/img1.jpeg") no-repeat scroll center center;
     background-size: cover;
 }
 

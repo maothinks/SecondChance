@@ -105,6 +105,14 @@ html, body { height: 100%; }
     background-color: #e3ecf0;
 }
 
+.pt-page-9 {
+    background-color: white;
+}
+
+.pt-page-10 {
+    background-color: #e3ecf0;
+}
+
 /* Triggers (menu and button) */
 
 .pt-triggers {

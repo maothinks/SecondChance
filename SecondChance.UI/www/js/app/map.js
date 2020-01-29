@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     //initializeSidebar();
 
-    initializeMap();
+    //initializeMap();
 
     initializeRing();
 });
@@ -109,13 +109,13 @@ function addMarkers() {
 
 // Adds a marker to the map and push to the array.
 function addMarker(id, location) {
-    var marker
+    var marker;
 
     if (currentId == id) {
         marker = new google.maps.Marker({
             position: location,
             map: map,
-            draggable: false,
+            draggable: false
         });
 
 
@@ -124,7 +124,7 @@ function addMarker(id, location) {
         marker = new google.maps.Marker({
             position: location,
             map: null,
-            draggable: false,
+            draggable: false
         });
     }
 
@@ -138,12 +138,6 @@ function addMarker(id, location) {
 
     if (currentId == id) {
         map.setCenter(location);
-    }
-}
-
-function setMapOnAll(map) {
-    for (var i = 0; i < markers.length; i++) {
-        markers[i].setMap(map);
     }
 }
 
@@ -165,7 +159,7 @@ function updateCurrentMarker() {
         case "2": { $("#selectTime").val(19); $("#lbl-place").text("Burger Del Oeste"); break; }
         case "3": { $("#selectTime").val(18); $("#lbl-place").text("Discoteca Carboncito"); break; }
         case "4": { $("#selectTime").val(17); $("#lbl-place").text("Metrofrenos"); break; }
-        case "4": { $("#selectTime").val(16); $("#lbl-place").text("EPS San Diego"); break; }
+        case "5": { $("#selectTime").val(16); $("#lbl-place").text("EPS San Diego"); break; }
         case "6": { $("#selectTime").val(15); $("#lbl-place").text("Casino Rio"); break; }
         case "7": { $("#selectTime").val(14); $("#lbl-place").text("C.C Premium Plaza"); break; }
         case "8": { $("#selectTime").val(13); $("#lbl-place").text("Colpensiones"); break; }
@@ -305,13 +299,12 @@ function initializeRing() {
 
         switch (currentPage) {
             case 1: {
+                search = false;
                 PageTransitions.nextPage(33, 1, 2);
                 break;
             }
             case 7: {
-
                 var vid = document.getElementById("myVideo");
-
 
                 if (vid.paused) {
                     vid.play();
@@ -319,11 +312,6 @@ function initializeRing() {
                     vid.pause();
                 }
                 
-                //vid.currentTime = 2;
-
-                //vid.play();
-
-
                 break;
             }
             default: break;

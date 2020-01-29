@@ -81,7 +81,7 @@ body {
     font-size: 24px;
     position: relative;
     z-index: 1;
-    top: 134px;
+    top: 158px;
 }
 
     .user-bar:after {
@@ -430,10 +430,10 @@ body {
 
     .conversation {
         height: calc(100vh - 55px);
-        top:134px;
+        top: 158px;
     }
 
         .conversation .conversation-container {
-            height: calc(100vh - 260px);
+            height: calc(100vh - 284px);
         }
 }

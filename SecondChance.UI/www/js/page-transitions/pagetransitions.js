@@ -111,7 +111,9 @@ var PageTransitions = (function () {
             }
             case 2:
             case 5:
-            case 8: {
+            case 8:
+            case 9:
+            case 10:{
                 $("#second-chance-ring").hide();
                 break;
             }
@@ -451,7 +453,7 @@ var PageTransitions = (function () {
                     onEndAnimation($currPage, $nextPage);
                 }
 
-                if (next == 1 && cur == 1) {
+                if (next == 1 && (cur == 1 || cur == 9)) {
                     loadTinderCards();
                 }
             }
@@ -477,3 +479,4 @@ var PageTransitions = (function () {
     };
 
 })();
+
